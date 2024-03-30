@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/jalalidatepicker.min.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <title>صفحه اصلی</title>
+</head>
+
+<body>
+
+  <!-- header -->
+
+  <header>
+    <!-- mobile menu -->
+    <div class="offcanvas offcanvas-end w-100 pt-4 d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header position-absolute start-0 mt-2">
+        <svg class="cursor-pointer" data-bs-dismiss="offcanvas" aria-label="Close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12L4.29289 11.2929L3.58579 12L4.29289 12.7071L5 12ZM17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11V13ZM8.29289 7.29289L4.29289 11.2929L5.70711 12.7071L9.70711 8.70711L8.29289 7.29289ZM4.29289 12.7071L8.29289 16.7071L9.70711 15.2929L5.70711 11.2929L4.29289 12.7071ZM5 13H17V11H5V13Z" fill="#008BF9"/>
+        </svg>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled p-0 mb-3 fs-14 fw-bold">
+          <li class="py-3 cursor-pointer"><a class="d-block text-blue">صفحه اصلی</a></li>
+          <li class="cursor-pointer h-100">
+            <div class="d-flex align-items-center showHover dropdown-btn gap-4 py-3">
+              <p class="mb-0 text-blue" href="#">
+                انواع بیمه
+              </p>
+              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.14688 0.646856C1.19332 0.600305 1.24849 0.563371 1.30922 0.538171C1.36996 0.512971 1.43508 0.5 1.50084 0.5C1.56659 0.5 1.63171 0.512971 1.69245 0.538171C1.75318 0.563371 1.80835 0.600305 1.85479 0.646856L7.50013 6.29242L13.1455 0.646856C13.192 0.60038 13.2471 0.563513 13.3079 0.53836C13.3686 0.513208 13.4337 0.500262 13.4994 0.500262C13.5652 0.500262 13.6303 0.513208 13.691 0.53836C13.7517 0.563513 13.8069 0.60038 13.8534 0.646856C13.8999 0.693332 13.9367 0.748507 13.9619 0.809231C13.9871 0.869955 14 0.935039 14 1.00077C14 1.06649 13.9871 1.13158 13.9619 1.1923C13.9367 1.25302 13.8999 1.3082 13.8534 1.35468L7.85409 7.35314C7.80765 7.3997 7.75248 7.43663 7.69174 7.46183C7.631 7.48703 7.56589 7.5 7.50013 7.5C7.43437 7.5 7.36926 7.48703 7.30852 7.46183C7.24778 7.43663 7.19261 7.3997 7.14617 7.35314L1.14688 1.35468C1.10032 1.30824 1.06338 1.25308 1.03818 1.19235C1.01297 1.13162 1 1.06652 1 1.00077C1 0.935015 1.01297 0.869911 1.03818 0.809181C1.06338 0.748451 1.10032 0.69329 1.14688 0.646856Z" fill="#0C356A" stroke="#0C356A"></path>
+              </svg>
+            </div>
+            <!-- dropdown -->
+            <ul class="fs-12 fw-bold list-unstyled pe-5 me-5 dropdown-content">
+              <li class="py-3">
+                <a class="d-flex text-blue align-items-center gap-2">
+                  <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9"/>
+                    <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9"/>
+                  </svg>
+                  <p class="mb-0">بیمه شخص ثالث</p>
+                </a>
+              </li>
+              <li class="py-3">
+                <a class="d-flex text-blue align-items-center gap-2">
+                  <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9"/>
+                    <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9"/>
+                  </svg>
+                  <p class="mb-0">بیمه بدنه</p>
+                </a>
+              </li>
+              <li class="py-3">
+                <a class="d-flex text-blue align-items-center gap-2">
+                  <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9"/>
+                    <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9"/>
+                  </svg>
+                  <p class="mb-0">بیمه مسئولیت و مهندسی</p>
+                </a>
+              </li>
+              <li class="py-3">
+                <a class="d-flex text-blue align-items-center gap-2">
+                  <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9"/>
+                    <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9"/>
+                  </svg>
+                  <p class="mb-0">بیمه تکمیلی و درمان</p>
+                </a>
+              </li>
+              <li class="py-3">
+                <a class="d-flex text-blue align-items-center gap-2">
+                  <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="1" width="6" height="6" rx="2.5" stroke="#008BF9"/>
+                    <rect x="1.5" y="2" width="4" height="4" rx="2" fill="#008BF9"/>
+                  </svg>
+                  <p class="mb-0">بیمه آتش سوزی</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="py-3 cursor-pointer"><a class="d-block text-blue">مجلات بیمه</a></li>
+          <li class="py-3 cursor-pointer"><a class="d-block text-blue">درباره ما</a></li>
+          <li class="py-3 cursor-pointer"><a class="d-block text-blue">ارتباط با ما</a></li>
+        </ul>
+        <a class="d-block text-white bg-main rounded-17 py-3 text-center font-bold fs-12">یادآور قسط بیمه</a>
+      </div>
+    </div>
+    <!--  -->
+    <div class="bg-blue py-3 d-none d-lg-block">
+      <div class="container d-flex align-items-center justify-content-center gap-5">
+        <div class="d-flex align-items-center gap-2 ms-4">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.51496 1.51896C8.34401 1.50635 8.17225 1.5 8 1.5V0.5C8.19685 0.5 8.39314 0.507262 8.58852 0.521672L8.51496 1.51896ZM10.5193 1.96905C10.1985 1.84533 9.86912 1.7454 9.53371 1.67008L9.75282 0.694382C10.1361 0.780463 10.5126 0.894665 10.8792 1.03605L10.5193 1.96905ZM11.889 2.67971C11.7458 2.58402 11.5994 2.49388 11.4503 2.40939L11.9432 1.5393C12.1136 1.63586 12.2809 1.73888 12.4446 1.84824C12.6082 1.9576 12.7674 2.0727 12.9219 2.19322L12.3066 2.98158C12.1715 2.87612 12.0322 2.77541 11.889 2.67971ZM13.7231 4.46934C13.5252 4.18829 13.3068 3.92218 13.0697 3.67321L13.794 2.98368C14.0649 3.26821 14.3145 3.57233 14.5407 3.89353L13.7231 4.46934ZM14.4672 5.82122C14.4012 5.66208 14.3296 5.50583 14.2526 5.35271L15.1458 4.90311C15.2339 5.0781 15.3157 5.25667 15.391 5.43853C15.4664 5.62039 15.5348 5.80453 15.5962 5.99054L14.6467 6.30423C14.5929 6.14147 14.5331 5.98035 14.4672 5.82122ZM14.9979 8.32822C14.9895 7.98455 14.9557 7.64197 14.8969 7.30326L15.8822 7.13231C15.9494 7.51939 15.988 7.91092 15.9976 8.30367L14.9979 8.32822ZM14.8655 9.86563C14.8991 9.6967 14.9264 9.52699 14.9474 9.35687L15.9398 9.47929C15.9159 9.67372 15.8847 9.86766 15.8463 10.0607C15.8079 10.2538 15.7625 10.4449 15.7102 10.6337L14.7464 10.367C14.7922 10.2018 14.8319 10.0346 14.8655 9.86563ZM13.914 12.245C14.0979 11.9546 14.2602 11.651 14.3995 11.3367L15.3137 11.7419C15.1545 12.1011 14.969 12.4481 14.7588 12.78L13.914 12.245ZM12.9497 13.4497C13.0715 13.328 13.1885 13.202 13.3005 13.0722L14.0577 13.7254C13.9297 13.8737 13.796 14.0177 13.6569 14.1569L12.9497 13.4497Z"
+              fill="white" />
+            <path
+              d="M8 1.5C6.84885 1.5 5.71545 1.7839 4.70022 2.32655C3.68499 2.8692 2.81926 3.65386 2.17971 4.61101C1.54017 5.56816 1.14654 6.66827 1.03371 7.81388C0.920876 8.95949 1.09232 10.1153 1.53285 11.1788C1.97337 12.2423 2.66939 13.1808 3.55925 13.9111C4.44911 14.6414 5.50533 15.1409 6.63437 15.3655C7.76341 15.5901 8.93041 15.5327 10.032 15.1986C11.1336 14.8644 12.1358 14.2637 12.9497 13.4497L13.6569 14.1569C12.7266 15.0871 11.5812 15.7736 10.3223 16.1555C9.06332 16.5374 7.72961 16.6029 6.43928 16.3463C5.14895 16.0896 3.94183 15.5187 2.92486 14.6841C1.90788 13.8495 1.11243 12.7769 0.608966 11.5615C0.105504 10.346 -0.0904279 9.02514 0.0385242 7.71586C0.167476 6.40659 0.617333 5.14933 1.34825 4.05544C2.07916 2.96155 3.06857 2.0648 4.22883 1.44463C5.38909 0.824457 6.68439 0.5 8 0.5V1.5Z"
+              fill="white" />
+            <path
+              d="M7.5 3.5C7.77614 3.5 8 3.72386 8 4V9.20984L11.2481 11.0659C11.4878 11.2029 11.5711 11.5083 11.4341 11.7481C11.2971 11.9878 10.9917 12.0711 10.7519 11.9341L7.25193 9.93412C7.09615 9.8451 7 9.67943 7 9.5V4C7 3.72386 7.22386 3.5 7.5 3.5Z"
+              fill="white" />
+          </svg>
+          <p class="mb-0 text-white fw-bold fs-14">ساعات کاری: شنبه تا پنچشنبه- 9 صبح تا 5 بعد از ظهر</p>
+        </div>
+        <div class="d-flex align-items-center gap-2 text-white fw-bold">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.65387 1.82849C3.40343 1.50649 2.92745 1.47686 2.639 1.76531L1.60508 2.79923C1.1216 3.28271 0.94387 3.96766 1.1551 4.56847C2.00338 6.98124 3.39215 9.24671 5.32272 11.1773C7.25329 13.1078 9.51876 14.4966 11.9315 15.3449C12.5323 15.5561 13.2173 15.3784 13.7008 14.8949L14.7347 13.861C15.0231 13.5726 14.9935 13.0966 14.6715 12.8461L12.3653 11.0524C12.2008 10.9245 11.9866 10.8793 11.7845 10.9298L9.59541 11.4771C9.00082 11.6257 8.37183 11.4515 7.93845 11.0181L5.48187 8.56155C5.04849 8.12817 4.87427 7.49919 5.02292 6.90459L5.57019 4.71553C5.62073 4.51336 5.57552 4.29918 5.44758 4.13468L3.65387 1.82849ZM1.88477 1.01108C2.62689 0.268961 3.8515 0.345203 4.49583 1.17363L6.28954 3.47983C6.6187 3.90304 6.73502 4.45409 6.60498 4.97423L6.05772 7.16329C5.99994 7.3944 6.06766 7.63888 6.2361 7.80732L8.69268 10.2639C8.86113 10.4323 9.1056 10.5001 9.33671 10.4423L11.5258 9.89502C12.0459 9.76499 12.597 9.8813 13.0202 10.2105L15.3264 12.0042C16.1548 12.6485 16.231 13.8731 15.4889 14.6152L14.455 15.6492C13.7153 16.3889 12.6089 16.7137 11.5778 16.3512C9.01754 15.4511 6.61438 13.9774 4.56849 11.9315C2.5226 9.88562 1.04895 7.48246 0.148838 4.92225C-0.213682 3.89112 0.11113 2.78472 0.85085 2.045L1.88477 1.01108Z"
+              fill="white" />
+          </svg>
+          <p class="mb-0 fs-14">شماره تماس:</p>
+          <div class="d-flex align-items-center gap-1 fs-14">
+            <a class="text-white">۰۹۱۲۳۴۵۶۷۸۹</a>
+            -
+            <a class="text-white">۰۲۱۳۴۵۶۸۷۰۰</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white shadow h-101 h-lg-80 d-flex align-items-center mt-3 mt-lg-0">
+      <div class="container d-flex align-items-center justify-content-between position-relative">
+        <svg data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" class="cursor-pointer d-lg-none" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 7.5H5" stroke="#0C356A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 12.5H9" stroke="#008BF9" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 17.5H13" stroke="#0C356A" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <a class="d-block d-lg-none">
+         <img alt="logo" src="assets/img/Frame 337.png" class="img-fluid w-66">
+        </a>
+        <a class="d-lg-none d-block">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.65387 1.82849C3.40343 1.50649 2.92745 1.47686 2.639 1.76531L1.60508 2.79923C1.1216 3.28271 0.94387 3.96766 1.1551 4.56847C2.00338 6.98124 3.39215 9.24671 5.32272 11.1773C7.25329 13.1078 9.51876 14.4966 11.9315 15.3449C12.5323 15.5561 13.2173 15.3784 13.7008 14.8949L14.7347 13.861C15.0231 13.5726 14.9935 13.0966 14.6715 12.8461L12.3653 11.0524C12.2008 10.9245 11.9866 10.8793 11.7845 10.9298L9.59541 11.4771C9.00082 11.6257 8.37183 11.4515 7.93845 11.0181L5.48187 8.56155C5.04849 8.12817 4.87427 7.49919 5.02292 6.90459L5.57019 4.71553C5.62073 4.51336 5.57552 4.29918 5.44758 4.13468L3.65387 1.82849ZM1.88477 1.01108C2.62689 0.268961 3.8515 0.345203 4.49583 1.17363L6.28954 3.47983C6.6187 3.90304 6.73502 4.45409 6.60498 4.97423L6.05772 7.16329C5.99994 7.3944 6.06766 7.63888 6.2361 7.80732L8.69268 10.2639C8.86113 10.4323 9.1056 10.5001 9.33671 10.4423L11.5258 9.89502C12.0459 9.76499 12.597 9.8813 13.0202 10.2105L15.3264 12.0042C16.1548 12.6485 16.231 13.8731 15.4889 14.6152L14.455 15.6492C13.7153 16.3889 12.6089 16.7137 11.5778 16.3512C9.01754 15.4511 6.61438 13.9774 4.56849 11.9315C2.5226 9.88562 1.04895 7.48246 0.148838 4.92225C-0.213682 3.89112 0.11113 2.78472 0.85085 2.045L1.88477 1.01108Z" fill="#008BF9"/>
+          </svg>
+        </a>
+        <div class="d-none d-lg-flex align-items-center gap-3 gap-xl-5">
+          <div class="w-200 flex-shrink-0">
+            <a class="w-100 d-block"><img alt="logo" src="assets/img/Frame 338.png" class="img-fluid w-100 d-block"></a>
+          </div>
+          <ul class="list-unstyled mb-0 p-0 d-flex align-items-center gap-xl-4 gap-3 h-101 fw-bold fs-18 fs-xl-14">
+            <li class="h-100 d-flex align-items-center">
+              <a class="text-blue h-100 d-flex align-items-center">صفحه اصلی</a>
+            </li>
+            <li class="d-flex align-items-center gap-1 cursor-pointer h-100 showHover">
+              <p class="mb-0 text-blue" href="#">
+                انواع بیمه
+              </p>
+              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.14688 0.646856C1.19332 0.600305 1.24849 0.563371 1.30922 0.538171C1.36996 0.512971 1.43508 0.5 1.50084 0.5C1.56659 0.5 1.63171 0.512971 1.69245 0.538171C1.75318 0.563371 1.80835 0.600305 1.85479 0.646856L7.50013 6.29242L13.1455 0.646856C13.192 0.60038 13.2471 0.563513 13.3079 0.53836C13.3686 0.513208 13.4337 0.500262 13.4994 0.500262C13.5652 0.500262 13.6303 0.513208 13.691 0.53836C13.7517 0.563513 13.8069 0.60038 13.8534 0.646856C13.8999 0.693332 13.9367 0.748507 13.9619 0.809231C13.9871 0.869955 14 0.935039 14 1.00077C14 1.06649 13.9871 1.13158 13.9619 1.1923C13.9367 1.25302 13.8999 1.3082 13.8534 1.35468L7.85409 7.35314C7.80765 7.3997 7.75248 7.43663 7.69174 7.46183C7.631 7.48703 7.56589 7.5 7.50013 7.5C7.43437 7.5 7.36926 7.48703 7.30852 7.46183C7.24778 7.43663 7.19261 7.3997 7.14617 7.35314L1.14688 1.35468C1.10032 1.30824 1.06338 1.25308 1.03818 1.19235C1.01297 1.13162 1 1.06652 1 1.00077C1 0.935015 1.01297 0.869911 1.03818 0.809181C1.06338 0.748451 1.10032 0.69329 1.14688 0.646856Z" fill="#0C356A" stroke="#0C356A"/>
+              </svg>
+              <!-- dropdown -->
+              <div class="bg-white dropdown z-10 rounded-15 cursor-default h-auto end-0 start-0 position-absolute p-5 shadow">
+                 <div class="row gy-4 gx-5 pb-4">
+                  <div class="col-lg-3">
+                    <a class="d-flex align-items-start gap-2">
+                      <img alt="img" src="assets/img/car-insurance 1.png" class="img-fluid w-47 d-block">
+                      <div>
+                       <p class="text-main fw-bold mb-0">شخص ثالث</p>
+                       <p class="mb-0 fs-12 text-dark">هنگام رانندگی ، نگران خسارت و تصادف نباشین!</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/healthcare (1) 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">بیمه تکمیلی و درمان</p>
+                      <p class="mb-0 fs-12 text-dark">به خاطر هزینه ها، درمان عقب نیندازین</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/earthquake (2) 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">زلزله</p>
+                      <p class="mb-0 fs-12 text-dark">حفاظت از املاک در مناطق زلزله خیز</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/insurance 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">بیمه مسافرتی</p>
+                      <p class="mb-0 fs-12 text-dark">نگران اتفاقات احتمالی نباشین</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/fender-bender 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">بدنه</p>
+                      <p class="mb-0 fs-12 text-dark">مراقب سرمایه ات باش</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/life-insurance (2) 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">عمر</p>
+                      <p class="mb-0 fs-12 text-dark">به خاطر هزینه ها، درمان عقب نیندازین</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/home-insurance (1) 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">آتش سوزی</p>
+                      <p class="mb-0 fs-12 text-dark">حفاظت از املاک در برابر آتش سوزی</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/more 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">سایر بیمه ها</p>
+                      <p class="mb-0 fs-12 text-dark">نگران اتفاقات احتمالی نباشین</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/engineer (1) 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">مسئولین و مهندسی</p>
+                      <p class="mb-0 fs-12 text-dark">مراقب سرمایه ات باش</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/trailer 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">باربری</p>
+                      <p class="mb-0 fs-12 text-dark">سفارشات خود را بیمه کنید</p>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-lg-3">
+                   <a class="d-flex align-items-start gap-2">
+                     <img alt="img" src="assets/img/elevator 1.png" class="img-fluid w-47 d-block">
+                     <div>
+                      <p class="text-main fw-bold mb-0">آسانسور</p>
+                      <p class="mb-0 fs-12 text-dark">نگران حوادث آسانسور نباشین</p>
+                     </div>
+                   </a>
+                 </div>
+                 </div>
+              </div>
+            </li>
+            <li class="h-100 d-flex align-items-center">
+              <a class="text-blue h-100 d-flex align-items-center">ارتباط با ما</a>
+            </li>
+            <li class="h-100 d-flex align-items-center">
+              <a class="text-blue h-100 d-flex align-items-center">درباره ما</a>
+            </li>
+            <li class="h-100 d-flex align-items-center">
+              <a class="text-blue h-100 d-flex align-items-center">مجلات بیمه</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-flex align-items-center gap-xxl-5 gap-3">
+          <div class="cursor-pointer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" fill="white" />
+              <path
+                d="M21.0001 20.9997L17.5968 17.596M17.0036 4.99969C15.5217 3.75166 13.6084 2.99969 11.5194 2.99969C6.81432 2.99969 3.00012 6.81433 3.00012 11.5199C3.00012 16.2255 6.81432 20.0402 11.5194 20.0402C16.2244 20.0402 20.0386 16.2255 20.0386 11.5199C20.0386 10.3377 19.7978 9.21163 19.3627 8.18821"
+                stroke="#0C356A" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <a>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" fill="white" />
+              <path
+                d="M14.2361 8C13.6868 8.61375 12.8885 9 12 9C10.3431 9 9 7.65685 9 6C9 4.34315 10.3431 3 12 3C12.8885 3 13.6868 3.38625 14.2361 4M7.33909 21H16.6609C19.1718 21 20.8514 18.4156 19.8316 16.1211V16.1211C18.7178 13.615 16.2326 12 13.4902 12H10.5098C7.76737 12 5.2822 13.615 4.16841 16.1211V16.1211C3.14864 18.4156 4.82819 21 7.33909 21Z"
+                stroke="#0C356A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a class="btn bg-main flex-shrink-0 text-white fs-18 fw-bold rounded-17 py-3">یادآور اقساط بیمه</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+
+  <main>
+
+    <!-- banner -->
+    <section id="banner" class="h-1014 h-lg-auto mt-sm-5 mt-4">
+      <div class="container text-center pt-sm-5">
+        <h1 class="font-bold text-main fs-36 fs-sm-20 mt-sm-3 mt-4">سامانه مقایسه و خرید آنلاین بیمه</h1>
+        <h3 class="fs-27 fs-sm-16">بیمه مورد نظرتان را خودتان انتخاب کنید</h3>
+        <div class="row justify-content-center max-w-653 mx-auto row-cols-3 row-cols-md-5 mx-0 g-4 mt-sm-4 mt-1">
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/car-insurance 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">شخص ثالث</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/fender-bender 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">بدنه</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/engineer (1) 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">مسئولیت و مهندسی</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/home-insurance (1) 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">آتش سوزی</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/earthquake (2) 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">زلزله</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/healthcare (1) 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">بیمه تکمیلی و درمان</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/life-insurance (2) 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">عمر</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/elevator 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">آسانسور</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/trailer 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">باربری</p>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              class="position-relative d-flex align-items-center justify-content-center rounded-25 hover1 overflow-hidden border-main bg-white w-sm-93 h-sm-93 h-120 w-120">
+              <div>
+                <img alt="icon" src="assets/img/more 1.png" class="img-fluid mx-auto w-sm-43 d-block">
+                <p class="mb-0 mt-2 fs-12 fs-sm-11 fw-bold text-main">سایر بیمه ها</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <img alt="img" src="assets/img/Group.png" class="img-fluid w-100 d-lg-none -mt-sm-180 -mt-492">
+    </section>
+
+    <!-- payment center -->
+    <section class="-mt-183 mt-lg-6 mb-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 ms-auto">
+            <h1 class="text-center text-main fs-32 fs-sm-20 font-bold">مراکز پرداخت خسارت</h1>
+            <p class="fs-14 lh-lg mt-4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
+              شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+              الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+            </p>
+            <a class="bg-main text-white font-bold fs-18 text-center py-2 rounded-17 w-100 d-block">ادامه</a>
+          </div>
+          <div class="col-lg-6">
+            <img alt="img" src="assets/img/pinterestdownloader.com-1705967907 1.png" class="img-fluid mx-auto mx-lg-0 d-block">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features -->
+    <section>
+      <div>
+        <img alt="img" src="assets/img/img.png" class="img-fluid w-100 d-none d-md-block">
+        <img alt="img" src="assets/img/img2.png" class="img-fluid w-100 d-block d-md-none">
+      </div>
+    </section>
+
+    <!-- notif -->
+    <section class="mt-5 pt-4">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h1 class="text-center text-main fs-32 fs-sm-20 font-bold">یادآور اقساط بیمه</h1>
+            <form class="row g-4 text-end mt-4 fs-14">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-15 h-43" id="floatingInput" placeholder="نام و نام خانوادگی">
+                  <label class="text-muted  end-0" for="floatingInput">نام و نام خانوادگی</label>
+                </div>                
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-15 h-43" id="floatingInput" placeholder="شماره تماس">
+                  <label class="text-muted  end-0" for="floatingInput">شماره تماس</label>
+                </div>                
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-15 h-43" id="floatingInput" placeholder="شماره بیمه نامه">
+                  <label class="text-muted  end-0" for="floatingInput">شماره بیمه نامه</label>
+                </div>                
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input data-jdp="" type="text" class="form-control rounded-15 h-43" id="floatingInput" placeholder="تاریخ سر رسید">
+                  <label class="text-muted  end-0" for="floatingInput">تاریخ سر رسید</label>
+                </div>                
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <select class="rounded-15 border h-43 bg-transparent w-100 px-3">
+                    <option>تعداد اقساط</option>
+                    <option>7</option>
+                    <option>12</option>
+                    <option>17</option>
+                  </select>
+                </div>                
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <select class="rounded-15 border h-43 bg-transparent w-100 px-3">
+                    <option>نحوه تکرار</option>
+                    <option>7</option>
+                    <option>12</option>
+                    <option>17</option>
+                  </select>
+                </div>                
+              </div>
+              <div class="col-12">
+                <input type="submit" value="ثبت یادآور" class="bg-main text-white h-49 border-0 text-center w-100 rounded-15">
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <img alt="img" src="assets/img/Frame 55.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog -->
+    <section>
+      <div class="container mt-5">
+        <h1 class="text-center text-main fs-32 fs-sm-20 font-bold">مجلات خبری بیمه ای</h1>
+        <div class="mt-3 swiper blog p-3 pb-5">
+          <div class="swiper-wrapper">
+           <div class="swiper-slide">
+            <div class="bg-white rounded-25 shadow p-3">
+              <div class="d-flex align-items-center justify-content-between fs-12">
+                <p class="rounded-pill bg-warning mb-0 px-3">بیمه عمر</p>
+                <p class="mb-0 text-secondary">۱۴۰۲/۳/۲۴</p>
+              </div>
+              <p class="fw-bold my-3">برای دریافت بیمه عمر چه شرایطی لازم است؟</p>
+              <a class="bg-main rounded-10 mx-auto -mb-33 w-140 h-40 d-flex align-items-center justify-content-center gap-1 text-white fw-bold fs-14">
+                <p class="mb-0">ادامه مطلب</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 12C18 12.4142 17.6642 12.75 17.25 12.75H8.56066L11.7803 15.9697C12.0732 16.2626 12.0732 16.7374 11.7803 17.0303C11.4874 17.3232 11.0126 17.3232 10.7197 17.0303L6.21967 12.5303C5.92678 12.2374 5.92678 11.7626 6.21967 11.4697L10.7197 6.96967C11.0126 6.67678 11.4874 6.67678 11.7803 6.96967C12.0732 7.26256 12.0732 7.73744 11.7803 8.03033L8.56066 11.25H17.25C17.6642 11.25 18 11.5858 18 12Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="bg-white rounded-25 shadow p-3">
+              <div class="d-flex align-items-center justify-content-between fs-12">
+                <p class="rounded-pill bg-warning mb-0 px-3">بیمه عمر</p>
+                <p class="mb-0 text-secondary">۱۴۰۲/۳/۲۴</p>
+              </div>
+              <p class="fw-bold my-3">برای دریافت بیمه عمر چه شرایطی لازم است؟</p>
+              <a class="bg-main rounded-10 mx-auto -mb-33 w-140 h-40 d-flex align-items-center justify-content-center gap-1 text-white fw-bold fs-14">
+                <p class="mb-0">ادامه مطلب</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 12C18 12.4142 17.6642 12.75 17.25 12.75H8.56066L11.7803 15.9697C12.0732 16.2626 12.0732 16.7374 11.7803 17.0303C11.4874 17.3232 11.0126 17.3232 10.7197 17.0303L6.21967 12.5303C5.92678 12.2374 5.92678 11.7626 6.21967 11.4697L10.7197 6.96967C11.0126 6.67678 11.4874 6.67678 11.7803 6.96967C12.0732 7.26256 12.0732 7.73744 11.7803 8.03033L8.56066 11.25H17.25C17.6642 11.25 18 11.5858 18 12Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="bg-white rounded-25 shadow p-3">
+              <div class="d-flex align-items-center justify-content-between fs-12">
+                <p class="rounded-pill bg-warning mb-0 px-3">بیمه عمر</p>
+                <p class="mb-0 text-secondary">۱۴۰۲/۳/۲۴</p>
+              </div>
+              <p class="fw-bold my-3">برای دریافت بیمه عمر چه شرایطی لازم است؟</p>
+              <a class="bg-main rounded-10 mx-auto -mb-33 w-140 h-40 d-flex align-items-center justify-content-center gap-1 text-white fw-bold fs-14">
+                <p class="mb-0">ادامه مطلب</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 12C18 12.4142 17.6642 12.75 17.25 12.75H8.56066L11.7803 15.9697C12.0732 16.2626 12.0732 16.7374 11.7803 17.0303C11.4874 17.3232 11.0126 17.3232 10.7197 17.0303L6.21967 12.5303C5.92678 12.2374 5.92678 11.7626 6.21967 11.4697L10.7197 6.96967C11.0126 6.67678 11.4874 6.67678 11.7803 6.96967C12.0732 7.26256 12.0732 7.73744 11.7803 8.03033L8.56066 11.25H17.25C17.6642 11.25 18 11.5858 18 12Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="bg-white rounded-25 shadow p-3">
+              <div class="d-flex align-items-center justify-content-between fs-12">
+                <p class="rounded-pill bg-warning mb-0 px-3">بیمه عمر</p>
+                <p class="mb-0 text-secondary">۱۴۰۲/۳/۲۴</p>
+              </div>
+              <p class="fw-bold my-3">برای دریافت بیمه عمر چه شرایطی لازم است؟</p>
+              <a class="bg-main rounded-10 mx-auto -mb-33 w-140 h-40 d-flex align-items-center justify-content-center gap-1 text-white fw-bold fs-14">
+                <p class="mb-0">ادامه مطلب</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 12C18 12.4142 17.6642 12.75 17.25 12.75H8.56066L11.7803 15.9697C12.0732 16.2626 12.0732 16.7374 11.7803 17.0303C11.4874 17.3232 11.0126 17.3232 10.7197 17.0303L6.21967 12.5303C5.92678 12.2374 5.92678 11.7626 6.21967 11.4697L10.7197 6.96967C11.0126 6.67678 11.4874 6.67678 11.7803 6.96967C12.0732 7.26256 12.0732 7.73744 11.7803 8.03033L8.56066 11.25H17.25C17.6642 11.25 18 11.5858 18 12Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="bg-white rounded-25 shadow p-3">
+              <div class="d-flex align-items-center justify-content-between fs-12">
+                <p class="rounded-pill bg-warning mb-0 px-3">بیمه عمر</p>
+                <p class="mb-0 text-secondary">۱۴۰۲/۳/۲۴</p>
+              </div>
+              <p class="fw-bold my-3">برای دریافت بیمه عمر چه شرایطی لازم است؟</p>
+              <a class="bg-main rounded-10 mx-auto -mb-33 w-140 h-40 d-flex align-items-center justify-content-center gap-1 text-white fw-bold fs-14">
+                <p class="mb-0">ادامه مطلب</p>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 12C18 12.4142 17.6642 12.75 17.25 12.75H8.56066L11.7803 15.9697C12.0732 16.2626 12.0732 16.7374 11.7803 17.0303C11.4874 17.3232 11.0126 17.3232 10.7197 17.0303L6.21967 12.5303C5.92678 12.2374 5.92678 11.7626 6.21967 11.4697L10.7197 6.96967C11.0126 6.67678 11.4874 6.67678 11.7803 6.96967C12.0732 7.26256 12.0732 7.73744 11.7803 8.03033L8.56066 11.25H17.25C17.6642 11.25 18 11.5858 18 12Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="mt-110 mt-sm-210 pt-5 position-relative">
+    <!-- bg -->
+    <img alt="bg" src="assets/img/Rectangle 5.png" class="img-fluid position-absolute d-none d-sm-block -z-1 end-0 start-0 bottom-0  top-0 w-100 h-100">
+    <img alt="bg" src="assets/img/Rectangle 5 (2).png" class="img-fluid position-absolute d-sm-none -z-1 end-0 start-0 bottom-0  top-0 w-100 h-100">
+    <!--  -->
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-lg-around justify-content-center gap-md-4 gap-3 fs-32 fs-lg-20 fw-bold position-relative h-md-230 h-165 -mt-sm-213 -mt-92 px-5">
+        <!-- bg -->
+        <img alt="img" src="assets/img/Group 271.png" class="img-fluid d-md-none -z-1 position-absolute end-0 start-0 bottom-0 top-0 w-100 h-100">
+        <img alt="img" src="assets/img/Rectangle 18.png" class="img-fluid d-none d-md-block -z-1 position-absolute end-0 start-0 bottom-0 top-0 w-100 h-100">
+        <img alt="bg" src="assets/img/Rectangle 19.png" class="img-fluid d-none d-md-block position-absolute -z-1 end-0 start-0 bottom-0  top-0 w-100 h-100">
+      <!--  -->
+       <p class="mb-0 text-blue pe-lg-5 fs-lg-16 text-center text-md-end">برای مشاوره رایگان می توانید با ما در ارتباط باشید</p>
+       <a class="d-flex align-items-center gap-2 text-blue text-md-main ps-lg-5">
+        <p class="mb-0">۰۹۱۲۴۵۶۷۸۹۰</p>
+        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="stroke-md-main" d="M7.16591 3.24183C6.74329 2.69846 5.94007 2.64845 5.45332 3.1352L3.70857 4.87995C2.89271 5.69582 2.59278 6.85167 2.94924 7.86554C4.3807 11.9371 6.72426 15.7601 9.98209 19.0179C13.2399 22.2757 17.0629 24.6193 21.1345 26.0508C22.1483 26.4072 23.3042 26.1073 24.1201 25.2914L25.8648 23.5467C26.3515 23.0599 26.3015 22.2567 25.7582 21.8341L21.8665 18.8072C21.5889 18.5913 21.2275 18.515 20.8863 18.6003L17.1923 19.5238C16.1889 19.7747 15.1275 19.4807 14.3961 18.7493L10.2507 14.6039C9.51933 13.8725 9.22534 12.8111 9.47618 11.8077L10.3997 8.1137C10.485 7.77254 10.4087 7.41111 10.1928 7.13353L7.16591 3.24183ZM4.18055 1.86244C5.43287 0.610122 7.4994 0.73878 8.58671 2.13676L11.6136 6.02846C12.1691 6.74263 12.3653 7.67252 12.1459 8.55026L11.2224 12.2443C11.1249 12.6343 11.2392 13.0469 11.5234 13.3311L15.6689 17.4766C15.9532 17.7608 16.3657 17.8751 16.7557 17.7776L20.4497 16.8541C21.3275 16.6347 22.2574 16.8309 22.9715 17.3864L26.8632 20.4133C28.2612 21.5006 28.3899 23.5671 27.1376 24.8194L25.3928 26.5642C24.1445 27.8125 22.2775 28.3606 20.5375 27.7488C16.2171 26.2299 12.1618 23.7431 8.70933 20.2907C5.25688 16.8382 2.7701 12.7829 1.25116 8.46254C0.639411 6.72252 1.18753 4.85546 2.43581 3.60719L4.18055 1.86244Z" fill="#0C356A" stroke="#0C356A"/>
+        </svg>
+       </a>
+     </div>
+     <div class="row g-4 mt-5 border-bottom border-3 border-white pb-3">
+       <div class="col-lg-3 ms-auto order-2 order-lg-0">
+        <h1 class="font-bold fs-24 text-white text-center text-lg-end ">بیمه ایران</h1>
+        <p class="fw-bold text-white lh-lg text-justify mt-3">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+        </p>
+        <a class="bg-white w-100 h-60 fw-bold d-flex align-items-center justify-content-center text-dark rounded-10 text-center">لینک باکس</a>
+       </div>
+       <div class="col-6 col-lg-2">
+        <h4 class="text-white fw-bold fs-20">پیوند</h4>
+        <ul class="p-0 list-unstyled mb-0 mt-3">
+          <li class="mb-2">
+            <a class="d-flex align-items-center gap-1 text-white">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" fill="#D9D9D9"/>
+              </svg>
+              <p class="mb-0">انواع بیمه</p>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="d-flex align-items-center gap-1 text-white">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" fill="#D9D9D9"/>
+              </svg>
+              <p class="mb-0">درباره ما</p>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="d-flex align-items-center gap-1 text-white">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" fill="#D9D9D9"/>
+              </svg>
+              <p class="mb-0">ارتباط با ما</p>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="d-flex align-items-center gap-1 text-white">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" fill="#D9D9D9"/>
+              </svg>
+              <p class="mb-0">شرایط و قوانین</p>
+            </a>
+          </li>
+        </ul>
+       </div>
+       <div class="col-6 col-lg-3">
+        <h4 class="text-white fw-bold fs-20">بیمه ها</h4>
+        <ul class="p-0 list-unstyled mb-0 mt-3">
+          <li class="mb-2">
+            <a class="d-flex align-items-center gap-1 text-white">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" fill="#D9D9D9"/>
+              </svg>
+              <p class="mb-0">بیمه شخص ثالث</p>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="d-flex align-items-center gap-1 text-white">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" fill="#D9D9D9"/>
+              </svg>
+              <p class="mb-0">بیمه آتش سوزی</p>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="d-flex align-items-center gap-1 text-white">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" fill="#D9D9D9"/>
+              </svg>
+              <p class="mb-0">بیمه عمر</p>
+            </a>
+          </li>
+          <li class="mb-2">
+            <a class="d-flex align-items-center gap-1 text-white">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="8" height="5" rx="2.5" fill="#D9D9D9"/>
+              </svg>
+              <p class="mb-0">سایر بیمه ها</p>
+            </a>
+          </li>
+        </ul>
+       </div>
+       <div class="col-lg-3 order-last">
+        <h4 class="text-white fs-20 fw-bold text-center">ارتباط با ما</h4>
+        <div class="mt-3">
+         <a class="d-flex align-items-center justify-content-center gap-1">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7071 14.1961L20.3552 16.8442C20.7113 17.2003 20.7113 17.7777 20.3552 18.1338C18.43 20.059 15.3821 20.2756 13.204 18.642L11.6286 17.4604C9.88504 16.1528 8.33622 14.604 7.02857 12.8604L5.84701 11.285C4.21341 9.10689 4.43001 6.059 6.35523 4.13378C6.71133 3.77769 7.28867 3.77769 7.64477 4.13378L10.2929 6.78191C10.6834 7.17243 10.6834 7.8056 10.2929 8.19612L9.27175 9.21727C9.10946 9.37955 9.06923 9.62747 9.17187 9.83275C10.3585 12.2061 12.2829 14.1305 14.6563 15.3171C14.8615 15.4198 15.1095 15.3796 15.2717 15.2173L16.2929 14.1961C16.6834 13.8056 17.3166 13.8056 17.7071 14.1961Z" stroke="white" stroke-width="2"/>
+          </svg>
+           <p class="mb-0 text-white ">۰۹۱۲ ۳۴۴ ۷۸۸۵</p>
+         </a>
+         <a class="d-flex align-items-center justify-content-center gap-1 mt-2">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.398 20.7817L12.8585 21.6694L12.8585 21.6694L12.398 20.7817ZM11.602 20.7817L11.1415 21.6694L11.1415 21.6694L11.602 20.7817ZM18 11.9778C18 14.1236 16.9079 15.8937 15.545 17.2684C14.183 18.6422 12.6342 19.5327 11.9376 19.8941L12.8585 21.6694C13.6448 21.2616 15.397 20.2583 16.9653 18.6765C18.5326 17.0956 20 14.8483 20 11.9778H18ZM12 5.97778C15.3137 5.97778 18 8.66407 18 11.9778H20C20 7.55951 16.4183 3.97778 12 3.97778V5.97778ZM6 11.9778C6 8.66407 8.68629 5.97778 12 5.97778V3.97778C7.58172 3.97778 4 7.55951 4 11.9778H6ZM12.0624 19.8941C11.3658 19.5327 9.81702 18.6422 8.45503 17.2684C7.09211 15.8937 6 14.1236 6 11.9778H4C4 14.8483 5.46741 17.0956 7.03474 18.6765C8.60299 20.2583 10.3552 21.2616 11.1415 21.6694L12.0624 19.8941ZM11.9376 19.8941C11.9514 19.8869 11.9733 19.8801 12 19.8801C12.0267 19.8801 12.0486 19.8869 12.0624 19.8941L11.1415 21.6694C11.6831 21.9503 12.3169 21.9503 12.8585 21.6694L11.9376 19.8941ZM14 11.9778C14 13.0824 13.1046 13.9778 12 13.9778V15.9778C14.2091 15.9778 16 14.1869 16 11.9778H14ZM12 9.97778C13.1046 9.97778 14 10.8732 14 11.9778H16C16 9.76864 14.2091 7.97778 12 7.97778V9.97778ZM10 11.9778C10 10.8732 10.8954 9.97778 12 9.97778V7.97778C9.79086 7.97778 8 9.76864 8 11.9778H10ZM12 13.9778C10.8954 13.9778 10 13.0824 10 11.9778H8C8 14.1869 9.79086 15.9778 12 15.9778V13.9778Z" fill="white"/>
+          </svg>
+           <p class="mb-0 text-white ">تهران - خیابان - کوچه - پلاک 12</p>
+         </a>
+         <div class="d-flex align-items-center justify-content-center gap-3 mt-lg-3 mt-4">
+          <a class="w-100 w-lg-101"><img alt="img" src="assets/img/n1.png" class="img-fluid w-100"></a>
+          <a class="w-100 w-lg-101"><img alt="img" src="assets/img/n2.png" class="img-fluid w-100"></a>
+         </div>
+        </div>
+        <p class="mb-0 text-white text-center d-sm-none mt-4">طراحی و توسعه یافته توسط الیتیست</p>
+       </div>
+     </div>
+     <div class="d-flex align-items-center justify-content-sm-between justify-content-center gap-2 pt-sm-3 pt-4 pb-4">
+       <p class="mb-0 text-white d-none d-sm-block">طراحی و توسعه یافته توسط الیتیست</p>
+       <div class="d-flex align-items-center justify-content-end gap-3">
+        <a>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.402 3.48967C18.161 1.23735 15.1732 0 11.9914 0C5.43976 0 0.102637 5.33714 0.096935 11.8888C0.096935 13.9872 0.644332 16.0285 1.68211 17.8361L0 24L6.30647 22.3464C8.0456 23.2929 10.0014 23.7947 11.9914 23.7947H11.9971C18.5488 23.7947 23.8859 18.4576 23.8916 11.9002C23.8859 8.72416 22.6486 5.73628 20.402 3.48967ZM11.9914 21.7819C10.2124 21.7819 8.47326 21.3029 6.95651 20.402L6.59728 20.1853L2.85673 21.1661L3.85459 17.5168L3.62081 17.1404C2.62865 15.5666 2.10976 13.7477 2.10976 11.8831C2.10976 6.44334 6.54596 2.00713 11.9971 2.00713C14.6372 2.00713 17.1176 3.0392 18.9878 4.90378C20.8524 6.77406 21.8788 9.25446 21.8788 11.8945C21.8731 17.3514 17.4369 21.7819 11.9914 21.7819ZM17.4141 14.3806C17.1176 14.2324 15.6578 13.5139 15.3841 13.4113C15.1104 13.3143 14.9109 13.263 14.717 13.5595C14.5174 13.856 13.9472 14.5289 13.7762 14.7227C13.6051 14.9223 13.4283 14.9451 13.1318 14.7969C12.8353 14.6486 11.8774 14.335 10.7427 13.32C9.85886 12.5331 9.26584 11.5581 9.08908 11.2616C8.91802 10.9651 9.07197 10.8054 9.22023 10.6572C9.35137 10.526 9.51673 10.3093 9.66499 10.1383C9.81324 9.96721 9.86456 9.84177 9.96149 9.6422C10.0584 9.44262 10.0128 9.27156 9.93868 9.12331C9.86456 8.97505 9.27154 7.50962 9.02065 6.91661C8.78117 6.335 8.53598 6.41483 8.35351 6.40912C8.18245 6.39772 7.98288 6.39772 7.78331 6.39772C7.58373 6.39772 7.26442 6.47185 6.99072 6.76835C6.71702 7.06486 5.95295 7.78332 5.95295 9.24875C5.95295 10.7142 7.01923 12.1226 7.16749 12.3222C7.31574 12.5217 9.26014 15.521 12.2423 16.8097C12.9494 17.1176 13.5025 17.3001 13.9358 17.4369C14.6486 17.665 15.2929 17.6308 15.8061 17.5567C16.3763 17.4711 17.5623 16.8382 17.8132 16.1426C18.0584 15.4469 18.0584 14.8539 17.9843 14.7284C17.9102 14.603 17.7106 14.5289 17.4141 14.3806Z" fill="white"/>
+          </svg>
+        </a>
+        <a>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12.4301 8.85898C11.2629 9.34445 8.9302 10.3492 5.43195 11.8734C4.86389 12.0993 4.56632 12.3203 4.53923 12.5363C4.49345 12.9015 4.95077 13.0453 5.57354 13.2412C5.65825 13.2678 5.74602 13.2954 5.836 13.3247C6.4487 13.5238 7.27289 13.7568 7.70135 13.7661C8.09 13.7745 8.52379 13.6142 9.0027 13.2854C12.2712 11.0791 13.9584 9.96386 14.0644 9.93982C14.1391 9.92286 14.2427 9.90153 14.3128 9.9639C14.383 10.0263 14.3761 10.1444 14.3687 10.1761C14.3234 10.3692 12.5282 12.0381 11.5992 12.9018C11.3096 13.1711 11.1041 13.3621 11.0621 13.4057C10.9681 13.5034 10.8722 13.5958 10.78 13.6846C10.2108 14.2334 9.78397 14.6449 10.8037 15.3168C11.2937 15.6397 11.6858 15.9068 12.077 16.1732C12.5042 16.4641 12.9303 16.7543 13.4817 17.1157C13.6221 17.2078 13.7563 17.3034 13.8869 17.3966C14.3841 17.751 14.8308 18.0694 15.3826 18.0187C15.7033 17.9892 16.0345 17.6876 16.2027 16.7884C16.6003 14.6632 17.3817 10.0585 17.5623 8.16103C17.5781 7.99479 17.5582 7.78203 17.5422 7.68863C17.5262 7.59524 17.4928 7.46217 17.3714 7.36366C17.2277 7.247 17.0057 7.2224 16.9064 7.22414C16.4551 7.2321 15.7626 7.47288 12.4301 8.85898Z" fill="white"/>
+          </svg>
+        </a>
+        <a>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.0011 0C8.74209 0 8.33309 0.0142504 7.05307 0.072501C5.77556 0.131002 4.90355 0.333254 4.14054 0.630007C3.35128 0.93651 2.68178 1.34651 2.01477 2.01377C1.34726 2.68078 0.937259 3.35028 0.629756 4.13929C0.332253 4.90255 0.129751 5.77481 0.0722506 7.05182C0.015 8.33184 0 8.74109 0 12.0001C0 15.2592 0.0145004 15.6669 0.072501 16.9469C0.131252 18.2244 0.333504 19.0964 0.630007 19.8595C0.93676 20.6487 1.34676 21.3182 2.01402 21.9852C2.68078 22.6527 3.35028 23.0637 4.13904 23.3702C4.90255 23.667 5.77481 23.8692 7.05207 23.9277C8.33209 23.986 8.74084 24.0002 11.9996 24.0002C15.2589 24.0002 15.6667 23.986 16.9467 23.9277C18.2242 23.8692 19.0972 23.667 19.8607 23.3702C20.6497 23.0637 21.3182 22.6527 21.985 21.9852C22.6525 21.3182 23.0625 20.6487 23.37 19.8597C23.665 19.0964 23.8675 18.2242 23.9275 16.9472C23.985 15.6672 24 15.2592 24 12.0001C24 8.74109 23.985 8.33209 23.9275 7.05207C23.8675 5.77456 23.665 4.90255 23.37 4.13954C23.0625 3.35028 22.6525 2.68078 21.985 2.01377C21.3175 1.34626 20.65 0.93626 19.86 0.630007C19.0949 0.333254 18.2224 0.131002 16.9449 0.072501C15.6649 0.0142504 15.2574 0 11.9974 0H12.0011ZM10.9246 2.16252C11.2441 2.16202 11.6006 2.16252 12.0011 2.16252C15.2052 2.16252 15.5849 2.17402 16.8502 2.23152C18.0202 2.28502 18.6552 2.48053 19.0782 2.64478C19.6382 2.86228 20.0375 3.12228 20.4572 3.54229C20.8772 3.96229 21.1372 4.3623 21.3552 4.9223C21.5195 5.34481 21.7152 5.97981 21.7685 7.14982C21.826 8.41484 21.8385 8.79484 21.8385 11.9974C21.8385 15.1999 21.826 15.5799 21.7685 16.8449C21.715 18.0149 21.5195 18.6499 21.3552 19.0724C21.1377 19.6325 20.8772 20.0312 20.4572 20.451C20.0372 20.871 19.6385 21.131 19.0782 21.3485C18.6557 21.5135 18.0202 21.7085 16.8502 21.762C15.5852 21.8195 15.2052 21.832 12.0011 21.832C8.79684 21.832 8.41709 21.8195 7.15207 21.762C5.98206 21.708 5.34706 21.5125 4.9238 21.3482C4.3638 21.1307 3.96379 20.8707 3.54379 20.4507C3.12378 20.0307 2.86378 19.6317 2.64578 19.0714C2.48153 18.6489 2.28577 18.0139 2.23252 16.8439C2.17502 15.5789 2.16352 15.1989 2.16352 11.9944C2.16352 8.78984 2.17502 8.41184 2.23252 7.14682C2.28602 5.97681 2.48153 5.3418 2.64578 4.9188C2.86328 4.3588 3.12378 3.95879 3.54379 3.53879C3.96379 3.11878 4.3638 2.85878 4.9238 2.64078C5.34681 2.47578 5.98206 2.28077 7.15207 2.22702C8.25909 2.17702 8.68809 2.16202 10.9246 2.15952V2.16252ZM18.4067 4.15504C17.6117 4.15504 16.9667 4.7993 16.9667 5.59456C16.9667 6.38957 17.6117 7.03457 18.4067 7.03457C19.2017 7.03457 19.8467 6.38957 19.8467 5.59456C19.8467 4.79955 19.2017 4.15454 18.4067 4.15454V4.15504ZM12.0011 5.83756C8.59784 5.83756 5.83856 8.59684 5.83856 12.0001C5.83856 15.4034 8.59784 18.1614 12.0011 18.1614C15.4044 18.1614 18.1627 15.4034 18.1627 12.0001C18.1627 8.59684 15.4042 5.83756 12.0009 5.83756H12.0011ZM12.0011 8.00008C14.2101 8.00008 16.0012 9.79085 16.0012 12.0001C16.0012 14.2091 14.2101 16.0002 12.0011 16.0002C9.79185 16.0002 8.00108 14.2091 8.00108 12.0001C8.00108 9.79085 9.79185 8.00008 12.0011 8.00008Z" fill="white"/>
+          </svg>
+        </a>
+       </div>
+     </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/jalalidatepicker.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
