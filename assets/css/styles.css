@@ -255,6 +255,10 @@ a {
     max-height: 1000px;
 }
 /* global styles */
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
 .outline-none {
     outline: none;
 }
