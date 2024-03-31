@@ -58,6 +58,9 @@ a {
 .rounded-17 {
     border-radius: 17px;
 }
+.rounded-20 {
+    border-radius: 20px;
+}
 .rounded-25 {
     border-radius: 25px;
 }
@@ -397,7 +400,7 @@ header .showHover:hover .dropdown{
         margin-top: -213px;
     }
     .mt-sm-210{
-        margin-top: 210px;
+        margin-top: 210px!important;
     }
 }
 
