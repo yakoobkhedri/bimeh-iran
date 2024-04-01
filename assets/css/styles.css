@@ -49,6 +49,9 @@ a {
 }
 
 /* border-radius */
+.rounded-8 {
+    border-radius: 8px!important;
+}
 .rounded-10 {
     border-radius: 10px!important;
 }
@@ -105,6 +108,9 @@ a {
 .-top-5 {
     top: -5px;
 }
+.-top-40 {
+    top: -40px;
+}
 .top-118 {
     top: 118px!important;
 }
@@ -121,7 +127,9 @@ a {
 .left-0 {
     left: 0;
 }
-
+.left-auto{
+    left: auto!important;
+}
 /* line height */
 .lh-24 {
     line-height: 24px;
@@ -163,6 +171,10 @@ a {
     margin-top: -183px;
 }
 /* max width */
+.max-w-450 {
+    max-width: 450px;
+    width: 100%;
+}
 .max-w-653 {
     max-width: 653px;
     width: 100%;
@@ -174,6 +186,9 @@ a {
 /* width */
 .w-15 {
     width: 15px;
+}
+.w-36{
+    width: 36px;
 }
 .w-47 {
     width: 47px;
@@ -194,11 +209,17 @@ a {
     width: 274px;
 }
 /* height */
+.h-36{
+    height: 36px;
+}
 .h-40 {
     height: 40px!important;
 }
 .h-43 {
     height: 43px!important;
+}
+.h-45 {
+    height: 45px!important;
 }
 .h-49 {
     height: 49px!important;
@@ -206,17 +227,26 @@ a {
 .h-60 {
     height: 60px!important;
 }
-.h-120 {
-    height: 120px;
+.h-100vh{
+    height: 100vh;
 }
 .h-101 {
     height: 101px;
+}
+.h-117vh{
+    height: 117vh;
+}
+.h-120 {
+    height: 120px;
 }
 .h-130 {
     height: 130px;
 }
 .h-165 {
     height: 165px;
+}
+.h-376 {
+    height: 376px;
 }
 .h-1014 {
     height: 1014px;
@@ -363,6 +393,9 @@ header .showHover:hover .dropdown{
     .fs-lg-20{
         font-size: 20px;
     }
+    .top-lg-0{
+        top: 0;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -393,6 +426,9 @@ header .showHover:hover .dropdown{
     .w-sm-43{
         width: 43px;
     }
+    .h-sm-136{
+        height: 136px;
+    }
     .h-sm-93{
         height: 93px;
     }
@@ -404,6 +440,12 @@ header .showHover:hover .dropdown{
     }
     .mt-sm-210{
         margin-top: 210px!important;
+    }
+    .shadow-sm-0{
+        box-shadow: none!important;
+    }
+    .h-sm-auto{
+        height: auto;
     }
 }
 
