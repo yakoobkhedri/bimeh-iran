@@ -193,6 +193,9 @@ a {
 .w-47 {
     width: 47px;
 }
+.w-55 {
+    width: 55px;
+}
 .w-66 {
     width: 66px;
 }
@@ -223,6 +226,9 @@ a {
 }
 .h-49 {
     height: 49px!important;
+}
+.h-55 {
+    height: 55px!important;
 }
 .h-60 {
     height: 60px!important;
@@ -298,7 +304,9 @@ a {
 .outline-none {
     outline: none;
 }
-
+.outline-main:focus{
+    border: 2px solid #008BF9!important;
+}
 .opacity-none {
     opacity: 0;
 }
@@ -432,6 +440,12 @@ header .showHover:hover .dropdown{
     .h-sm-93{
         height: 93px;
     }
+    .h-sm-42{
+        height: 42px!important;
+    }
+    .h-sm-auto{
+        height: auto;
+    }
     .-mt-sm-180{
         margin-top: -180px;
     }
@@ -443,9 +457,6 @@ header .showHover:hover .dropdown{
     }
     .shadow-sm-0{
         box-shadow: none!important;
-    }
-    .h-sm-auto{
-        height: auto;
     }
 }
 
