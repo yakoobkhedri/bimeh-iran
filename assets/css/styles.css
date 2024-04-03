@@ -145,6 +145,9 @@ a {
 .bg-gray {
     background-color: #ECECEC;
 }
+.bg-main-gradient{
+    background: linear-gradient(90deg,rgba(18, 147, 250, 0.18) 100%, rgba(18, 147, 250, 0.57) 67%);
+}
 /* font size */
 .fs-12 {
     font-size: 12px;
@@ -183,9 +186,15 @@ a {
 .border-main{
     border: 1px solid #008BF9;
 }
+.border-r-main-3{
+    border-right: 3px solid #008BF9;
+}
 /* width */
 .w-15 {
     width: 15px;
+}
+.w-26{
+    width: 26px;
 }
 .w-36{
     width: 36px;
@@ -212,6 +221,9 @@ a {
     width: 274px;
 }
 /* height */
+.h-26{
+    height: 26px;
+}
 .h-36{
     height: 36px;
 }
@@ -339,7 +351,21 @@ a {
 input[type="number"] {
     -moz-appearance: textfield;
 }
-
+/* accordion */
+.accordion-btn > div:last-child{
+    transition: all .4s;
+}
+.accordion-btn.active > div:last-child{
+    transform: rotate(180deg);
+}
+.accordion-content{
+    transition: all .4s;
+    max-height: 0;
+    overflow: hidden;
+}
+.accordion-content.active{
+    max-height: 2000px;
+}
 /* header */
 header ul li > p,header ul li svg path,.showHover > p,.dropdown-content{
   transition: all .4s;
