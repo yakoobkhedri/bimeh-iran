@@ -24,7 +24,16 @@ var blog = new Swiper(".blog", {
     },
   },
 });
-
+var blog2 = new Swiper(".blog2", {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    }
+  },
+});
 // accordion
 
 let accordionBtn=Array.from(document.getElementsByClassName('accordion-btn'));
