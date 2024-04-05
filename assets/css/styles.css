@@ -441,6 +441,10 @@ header .showHover:hover .dropdown{
 }
 
 @media only screen and (max-width:992px) {
+    
+    header img[alt='logo']{
+        width: 90px;
+    }
     .h-lg-80{
         height: 80px;
     }
