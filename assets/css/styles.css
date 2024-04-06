@@ -401,6 +401,10 @@ input[type="number"] {
 .accordion-content.active{
     max-height: 2000px;
 }
+/* modal */
+.modal-backdrop {
+  background-color: white;
+}
 /* header */
 header ul li > p,header ul li svg path,.showHover > p,.dropdown-content{
   transition: all .4s;

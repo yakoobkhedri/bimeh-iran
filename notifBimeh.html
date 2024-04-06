@@ -13,6 +13,53 @@
 
 <body>
 
+  <!-- notif Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content max-w-450 rounded-15 shadow-lg border-0">
+      <div class="modal-body p-5 pb-4">
+          <p class="fs-14 fw-bold mb-3 text-center">ثبت یادآور اقساط بیمه</p>
+          <p class="text-muted fs-12 fw-bold mb-3 text-center">کد ارسال شده شماره ۰۹۱۲۴۵۶۷۸۹۸ را وارد کنید</p>
+          <div class="d-flex align-items-center justify-content-between gap-2 fs-12">
+            <a class="d-flex align-items-center gap-2 text-muted"> 
+              <p class="mb-0">ارسال مجدد کد</p>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 9L14 5L10 1" stroke="#8E8C8C"></path>
+                <path d="M18.0622 8.5C18.8552 9.87363 19.1583 11.4759 18.9217 13.0443C18.685 14.6127 17.9228 16.0542 16.7598 17.1327C15.5967 18.2112 14.1019 18.8628 12.5202 18.9806C10.9384 19.0985 9.36351 18.6757 8.05349 17.7814C6.74347 16.8872 5.77598 15.5746 5.30953 14.0586C4.84308 12.5426 4.90532 10.9131 5.48606 9.43709C6.06679 7.96109 7.13158 6.72607 8.506 5.93436C9.88042 5.14265 11.483 4.84119 13.0511 5.07937" stroke="#8E8C8C" stroke-linecap="round"></path>
+              </svg>
+            </a>
+            <a class="text-main">اصلاح شماره موبایل</a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between gap-3 mt-3"> 
+            <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+            <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+            <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+            <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+            <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+          </div>
+          <p class="text-center text-secondary mt-3 fs-12"><span>۱۱۵</span> ثانیه تا ارسال مجدد کد</p>
+          <input type="submit" value="تایید کد" class="bg-main rounded-15 text-white border-0 text-center fw-bold fs-14 mt-3 h-45 d-flex align-items-center justify-content-center w-100 d-block">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- message notif Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content max-w-450 rounded-15 shadow-lg border-0">
+        <div class="modal-body p-4">
+          <svg class="mx-auto d-block mt-4" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7497 24.1667L30.6744 30.8602C31.0929 31.1741 31.6826 31.1124 32.027 30.7187L48.333 12.0833" stroke="#008BF9" stroke-width="3" stroke-linecap="round"/>
+            <path d="M50.75 29C50.75 33.5445 49.3265 37.9749 46.6794 41.6689C44.0323 45.3629 40.2947 48.1349 35.9913 49.5957C31.688 51.0565 27.0351 51.1327 22.6863 49.8135C18.3375 48.4942 14.5111 45.846 11.7446 42.2406C8.97804 38.6352 7.41034 34.2537 7.26165 29.7116C7.11295 25.1696 8.39074 20.695 10.9155 16.9163C13.4403 13.1377 17.0853 10.2449 21.3386 8.64405C25.5918 7.04324 30.2396 6.8149 34.6293 7.99111" stroke="#008BF9" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <p class="fw-bold mt-2 mb-0 text-center">یادآور اقساط بیمه ثبت شد!</p>
+          <a href="index.html" class="fs-12 text-main fw-bold mt-1 d-sm-block d-none mb-4 text-center">بازگشت به صفحه اصلی</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- header -->
 
   <header>
@@ -358,7 +405,7 @@
               </div>                
             </div>
             <div class="col-12">
-              <input type="submit" value="ثبت یادآور" class="bg-main text-white h-49 border-0 text-center w-100 rounded-15">
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="bg-main d-flex align-items-center justify-content-center text-white h-49 border-0 text-center w-100 rounded-15">ثبت یادآور بیمه</a>
             </div>
           </form>
          </div>
