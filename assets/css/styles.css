@@ -75,6 +75,10 @@ a {
 .rounded-25 {
     border-radius: 25px;
 }
+.rounded-t-25{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 /* z index */
 .-z-1 {
     z-index: -1;
@@ -304,6 +308,9 @@ a {
 .h-1014 {
     height: 1014px;
 }
+.h-auto{
+    height: auto;
+}
 /* margin top */
 .-mt-4 {
     margin-top: -4px;
@@ -527,6 +534,9 @@ header .showHover:hover .dropdown{
     .shadow-sm-0{
         box-shadow: none!important;
     }
+    .modal-backdrop {
+        background-color: black;
+      }
 }
 
 @media only screen and (max-width:400px) {

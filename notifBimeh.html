@@ -16,7 +16,7 @@
   <!-- notif Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content max-w-450 rounded-15 shadow-lg border-0">
+    <div class="modal-content max-w-450 mx-auto rounded-15 shadow-lg border-0">
       <div class="modal-body p-5 pb-4">
           <p class="fs-14 fw-bold mb-3 text-center">ثبت یادآور اقساط بیمه</p>
           <p class="text-muted fs-12 fw-bold mb-3 text-center">کد ارسال شده شماره ۰۹۱۲۴۵۶۷۸۹۸ را وارد کنید</p>
@@ -41,6 +41,33 @@
           <input type="submit" value="تایید کد" class="bg-main rounded-15 text-white border-0 text-center fw-bold fs-14 mt-3 h-45 d-flex align-items-center justify-content-center w-100 d-block">
       </div>
     </div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom shadow-lg rounded-t-25 h-auto border-0" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body p-4 pt-5">
+    <p class="fs-14 fw-bold mb-3 text-center">ثبت یادآور اقساط بیمه</p>
+    <p class="text-muted fs-12 fw-bold mb-3 text-center">کد ارسال شده شماره ۰۹۱۲۴۵۶۷۸۹۸ را وارد کنید</p>
+    <div class="d-flex align-items-center justify-content-between gap-2 fs-12">
+      <a class="d-flex align-items-center gap-2 text-muted"> 
+        <p class="mb-0">ارسال مجدد کد</p>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 9L14 5L10 1" stroke="#8E8C8C"></path>
+          <path d="M18.0622 8.5C18.8552 9.87363 19.1583 11.4759 18.9217 13.0443C18.685 14.6127 17.9228 16.0542 16.7598 17.1327C15.5967 18.2112 14.1019 18.8628 12.5202 18.9806C10.9384 19.0985 9.36351 18.6757 8.05349 17.7814C6.74347 16.8872 5.77598 15.5746 5.30953 14.0586C4.84308 12.5426 4.90532 10.9131 5.48606 9.43709C6.06679 7.96109 7.13158 6.72607 8.506 5.93436C9.88042 5.14265 11.483 4.84119 13.0511 5.07937" stroke="#8E8C8C" stroke-linecap="round"></path>
+        </svg>
+      </a>
+      <a class="text-main">اصلاح شماره موبایل</a>
+    </div>
+    <div class="d-flex align-items-center justify-content-between gap-3 mt-3"> 
+      <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+      <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+      <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+      <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+      <input min="1" max="10" type="number" class="rounded-15 form-control outline-main border border-secondary h-sm-42 h-55 bg-transparent text-center">
+    </div>
+    <p class="text-center text-secondary mt-3 fs-12"><span>۱۱۵</span> ثانیه تا ارسال مجدد کد</p>
+    <input type="submit" value="تایید کد" class="bg-main rounded-15 text-white border-0 text-center fw-bold fs-14 mt-3 h-45 d-flex align-items-center justify-content-center w-100 d-block">
+    <img alt="img" src="assets/img/Group 9012.png" class="img-fluid d-block mx-auto mt-4">
   </div>
 </div>
 
@@ -359,7 +386,7 @@
               <p class="fs-14 mb-0 text-dark">اطلاعات بیمه نامه خود را وارد کنید.</p>
             </div>
           </div>
-          <form class="row g-5 text-end mt-4 fs-14">
+          <form class="row g-lg-5 g-4 text-end mt-4 fs-14">
             <div class="col-md-6">
               <div class="form-floating mb-3">
                 <input type="text" class="form-control rounded-15 h-43" id="floatingInput" placeholder="نام و نام خانوادگی">
@@ -405,12 +432,13 @@
               </div>                
             </div>
             <div class="col-12">
-              <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="bg-main d-flex align-items-center justify-content-center text-white h-49 border-0 text-center w-100 rounded-15">ثبت یادآور بیمه</a>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="bg-main d-none d-sm-flex align-items-center justify-content-center text-white h-49 border-0 text-center w-100 rounded-15">ثبت یادآور بیمه</a>
+              <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" class="bg-main d-flex d-sm-none align-items-center justify-content-center text-white h-49 border-0 text-center w-100 rounded-15">ثبت یادآور بیمه</a>
             </div>
           </form>
          </div>
          <div class="col-lg-5">
-          <img alt="img" src="assets/img/Frame (3).png" class="img-fluid mx-auto">
+          <img alt="img" src="assets/img/Frame (3).png" class="img-fluid mx-auto d-block">
          </div>
          <div class="col-12">
            <div class="fw-bold fs-14 bg-white shadow-sm p-4 rounded-15">
