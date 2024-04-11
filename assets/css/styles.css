@@ -116,12 +116,31 @@ a {
 .shadow1 {
     box-shadow: 0px 0px 26.399999618530273px 0px #00000040;
 }
+.shadow2 {
+    box-shadow: 0px 0px 43.2px 0px #00000010;
+}
+.shadow3 {
+    box-shadow: 0px 0px 4px 0px #00000025;
+}
+/* rotate */
+.-rotate-2{
+    transform: rotate(-2deg);
+}
 /* top */
+.-top-2 {
+    top: -2px;
+}
 .-top-5 {
     top: -5px;
 }
+.-top-8 {
+    top: -8px;
+}
 .-top-11 {
     top: -11px;
+}
+.top-12 {
+    top: 12px;
 }
 .-top-40 {
     top: -40px;
@@ -140,10 +159,12 @@ a {
 .right-0 {
     right: 0;
 }
-
 /* left */
 .left-0 {
     left: 0;
+}
+.-left-6 {
+    left: -6px;
 }
 .left-auto{
     left: auto!important;
@@ -152,13 +173,15 @@ a {
 .lh-24 {
     line-height: 24px;
 }
-
 /* background */
 .bg-main {
     background-color: #008BF9;
 }
 .bg-main2{
     background-color: #aedafd;
+}
+.bg-main3{
+    background-color: #96cffd;
 }
 .bg-blue {
     background: #0C356A;
@@ -241,6 +264,18 @@ a {
 .w-70 {
     width: 70px;
 }
+.w-82 {
+    width: 82%;
+}
+.w-88 {
+    width: 88%;
+}
+.w-91 {
+    width: 91px;
+}
+.w-113 {
+    width: 113px;
+}
 .w-120 {
     width: 120px;
 }
@@ -284,11 +319,17 @@ a {
 .h-70 {
     height: 70px!important;
 }
+.h-81 {
+    height: 81%;
+}
 .h-100vh{
     height: 100vh;
 }
 .h-101 {
     height: 101px;
+}
+.h-113 {
+    height: 113px;
 }
 .h-117vh{
     height: 117vh;
@@ -299,8 +340,14 @@ a {
 .h-130 {
     height: 130px;
 }
+.h-154 {
+    height: 154px;
+}
 .h-165 {
     height: 165px;
+}
+.h-175 {
+    height: 175px;
 }
 .h-376 {
     height: 376px;
@@ -394,7 +441,7 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 /* accordion */
-.accordion-btn > div:last-child{
+.accordion-btn > div:last-child,.sidebar li,.sidebar li svg rect,.sidebar li svg path{
     transition: all .4s;
 }
 .accordion-btn.active > div:last-child{
@@ -411,6 +458,24 @@ input[type="number"] {
 /* modal */
 .modal-backdrop {
   background-color: white;
+}
+/* sidebar */
+.sidebar li:hover,.sidebar li.active{
+    background-color: #008BF9;
+}
+.sidebar li:hover a,.sidebar li.active a{
+    color: white;
+}
+.sidebar li:hover svg rect,.sidebar li.active svg rect,.sidebar li:hover svg path,.sidebar li.active svg path{
+    stroke: white!important;
+}
+.sidebar li >svg{
+    right: -25px;
+    opacity: 0;
+    transition: all .4s;
+}
+.sidebar li:hover >svg,.sidebar li.active >svg{
+   opacity: 100%;
 }
 /* header */
 header ul li > p,header ul li svg path,.showHover > p,.dropdown-content{
