@@ -297,6 +297,12 @@ a {
 .w-140 {
     width: 140px;
 }
+.w-153 {
+    width: 153px;
+}
+.w-180 {
+    width: 180px;
+}
 .w-200 {
     width: 200px;
 }
@@ -586,6 +592,9 @@ header .showHover:hover .dropdown{
     }
     .fs-sm-20{
         font-size: 20px;
+    }
+    .w-sm-100{
+        width: 100%;
     }
     .w-sm-93{
         width: 93px;
