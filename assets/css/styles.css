@@ -112,6 +112,9 @@ a {
 .text-black {
     color: #000000;
 }
+.text-green{
+    color: #69C157;
+}
 /* box shadow */
 .shadow1 {
     box-shadow: 0px 0px 26.399999618530273px 0px #00000040;
@@ -195,6 +198,12 @@ a {
 .bg-main-gradient{
     background: linear-gradient(90deg,rgba(18, 147, 250, 0.18) 10%, rgba(224, 236, 244, 0.57) 67%)
 }
+.bg-green{
+    background-color: #D3FFC9;
+}
+.bg-pink{
+    background-color: pink;
+}
 /* font size */
 .fs-10 {
     font-size: 10px;
@@ -241,6 +250,12 @@ a {
 }
 .border-r-main-3{
     border-right: 3px solid #008BF9;
+}
+.border-b-main-3{
+    border-bottom: 3px solid #008BF9;
+}
+.border-green{
+    border: 1px solid #4EC34B;
 }
 /* width */
 .w-15 {
