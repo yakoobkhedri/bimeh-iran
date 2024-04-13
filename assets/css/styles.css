@@ -236,6 +236,10 @@ a {
     margin-top: -183px;
 }
 /* max width */
+.max-w-357 {
+    max-width: 357px;
+    width: 100%;
+}
 .max-w-450 {
     max-width: 450px;
     width: 100%;
@@ -293,6 +297,9 @@ a {
 }
 .w-120 {
     width: 120px;
+}
+.w-133 {
+    width: 133px;
 }
 .w-140 {
     width: 140px;
@@ -592,6 +599,9 @@ header .showHover:hover .dropdown{
     }
     .fs-sm-20{
         font-size: 20px;
+    }
+    .max-w-sm-100{
+        max-width: 100%;
     }
     .w-sm-100{
         width: 100%;
