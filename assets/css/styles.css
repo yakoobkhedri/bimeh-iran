@@ -47,12 +47,6 @@ a {
 .border-b-dash {
     border-bottom: 2px dashed #0000000D
 }
-.border-main-2{
-    border: 2px solid #008BF9;
-}
-.border-r-main-24{
-    border-right: 24px solid #008BF9;
-}
 /* border-radius */
 .rounded-8 {
     border-radius: 8px!important;
@@ -260,6 +254,12 @@ a {
 }
 .border-green{
     border: 1px solid #4EC34B;
+}
+.border-main-2{
+    border: 2px solid #008BF9;
+}
+.border-r-main-24{
+    border-right: 24px solid #008BF9;
 }
 /* width */
 .w-15 {
