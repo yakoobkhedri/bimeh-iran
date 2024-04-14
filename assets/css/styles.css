@@ -292,11 +292,17 @@ a {
 .w-91 {
     width: 91px;
 }
+.w-104 {
+    width: 104px;
+}
 .w-113 {
     width: 113px;
 }
 .w-120 {
     width: 120px;
+}
+.w-123 {
+    width: 123px;
 }
 .w-133 {
     width: 133px;
@@ -322,6 +328,9 @@ a {
 /* height */
 .h-26{
     height: 26px;
+}
+.h-31{
+    height: 31px;
 }
 .h-36{
     height: 36px;
