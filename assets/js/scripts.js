@@ -48,3 +48,15 @@ accordionBtn.forEach((item)=>{
 // datapicker
 
 jalaliDatepicker.startWatch();
+
+// pay type
+
+let selectType=Array.from(document.getElementsByClassName('selectType'));
+let payType=Array.from(document.getElementsByClassName('payType'));
+
+selectType.forEach((item)=>{
+  item.addEventListener('change', function () {
+    payType.forEach((items)=>{items.classList.add('opacity-30')});
+    item.parentElement.parentElement.classList.remove('opacity-30');
+  })
+})

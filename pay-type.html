@@ -8,29 +8,10 @@
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/jalalidatepicker.min.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
-  <title>پیشخوان کاربری</title>
+  <title>روش پرداخت</title>
 </head>
 
 <body>
-
-  <!-- search modal -->
-  <div class="modal fade show" id="search" aria-modal="true" role="dialog">
-    <div class="modal-dialog modal-dialog-centered max-w-997">
-        <div class="modal-content rounded-20 border-main-2">
-            <div class="modal-body p-0">
-                <form>
-                    <div class="d-flex rounded-20 border shadow-sm align-items-center px-4 h-70 justify-content-between gap-2">
-                        <input placeholder="بیمه خود را جستجو کنید" type="search" class="flex-grow-1 bg-transparent border-0 outline-none py-2 fs-14 font-bold">
-                        <svg class="cursor-pointer" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="24" height="24" transform="translate(0.5)" fill="white"/>
-                          <path d="M21.5 20.9998L18.0967 17.5961M17.5035 4.99976C16.0216 3.75172 14.1082 2.99976 12.0192 2.99976C7.3142 2.99976 3.5 6.81439 3.5 11.52C3.5 16.2256 7.3142 20.0402 12.0192 20.0402C16.7243 20.0402 20.5385 16.2256 20.5385 11.52C20.5385 10.3377 20.2977 9.21169 19.8625 8.18827" stroke="#008BF9" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
   <!-- header -->
 
@@ -289,7 +270,7 @@
           </ul>
         </div>
         <div class="d-none d-lg-flex align-items-center gap-xxl-5 gap-3">
-          <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#search">
+          <div class="cursor-pointer">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="24" height="24" fill="white" />
               <path
@@ -344,7 +325,7 @@
           </div>
           <div class="rounded-20 mt-4 p-4 shadow2 border overflow-hidden">
            <ul class="list-unstyled fs-14 mb-0 pe-0 sidebar">
-            <li class="rounded-10 active py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 py-2 px-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -371,7 +352,7 @@
                 <p class="mb-0">بیمه های من</p>
               </a>
             </li>
-            <li class="rounded-10 py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 active py-2 px-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -414,137 +395,50 @@
           </div>
         </div>
         <div class="col-xl-9 col-lg-8">
-          <div class="position-relative">
-            <svg class="position-absolute -top-2 -left-6" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_370_727)">
-              <circle cx="33" cy="30" r="22" fill="#008BF9"/>
-              </g>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M35.3752 20.9816C34.6432 20.671 33.8398 20.5 33 20.5C29.8988 20.5 27.2934 22.8319 26.9509 25.9142L26.6991 28.1804L26.6929 28.2363C26.572 29.2897 26.2291 30.3056 25.6868 31.2168L25.6579 31.265L25.0799 32.2284L25.066 32.2516C24.8156 32.669 24.6081 33.0147 24.4733 33.301C24.3372 33.5899 24.2323 33.9025 24.2846 34.2338C24.3411 34.5919 24.5254 34.9175 24.8034 35.1502C25.0606 35.3655 25.3826 35.4364 25.7004 35.4683C26.0153 35.5 26.4185 35.5 26.9052 35.5H26.9323H39.0678H39.0949C39.5816 35.5 39.9848 35.5 40.2997 35.4683C40.6175 35.4364 40.9395 35.3655 41.1966 35.1502C41.4747 34.9175 41.659 34.5919 41.7155 34.2338C41.7678 33.9025 41.6629 33.5899 41.5268 33.301C41.392 33.0147 41.1846 32.669 40.9342 32.2517L40.9341 32.2516L40.9202 32.2284L40.3421 31.265L40.3133 31.2168C39.771 30.3056 39.4281 29.2897 39.3072 28.2363L39.3009 28.1804L39.2585 27.798C38.9455 27.9016 38.6155 27.9677 38.2737 27.9908L38.3071 28.2909L38.3137 28.3503C38.4507 29.5442 38.8393 30.6955 39.4539 31.7282L39.4846 31.7795L40.0627 32.7429C40.3306 33.1894 40.5113 33.4918 40.6221 33.7271C40.7341 33.9649 40.7321 34.0504 40.7277 34.0779C40.7089 34.1973 40.6475 34.3058 40.5548 34.3834C40.5334 34.4013 40.4612 34.447 40.1996 34.4734C39.9408 34.4994 39.5885 34.5 39.0678 34.5H26.9323C26.4116 34.5 26.0592 34.4994 25.8005 34.4734C25.5389 34.447 25.4667 34.4013 25.4453 34.3834C25.3526 34.3058 25.2912 34.1973 25.2723 34.0779C25.268 34.0504 25.2659 33.9649 25.378 33.7271C25.4888 33.4918 25.6695 33.1894 25.9374 32.7429L26.5154 31.7795L26.5462 31.7282C27.1607 30.6955 27.5494 29.5442 27.6864 28.3503L27.693 28.2909L27.9448 26.0246C28.231 23.4488 30.4083 21.5 33 21.5C33.5837 21.5 34.1464 21.5988 34.6711 21.7814C34.8695 21.4843 35.1066 21.2153 35.3752 20.9816ZM37.1893 22.1711C36.8745 22.3109 36.6025 22.5295 36.3984 22.8019C37.2932 23.6054 37.9044 24.7248 38.0524 25.9993C38.407 25.9902 38.7386 25.8888 39.0242 25.7182C38.8234 24.3203 38.155 23.0872 37.1893 22.1711Z" fill="white"/>
-              <path d="M30.1022 35.4059C30.2731 36.1501 30.6498 36.8077 31.1737 37.2767C31.6976 37.7458 32.3396 38 33 38C33.6604 38 34.3024 37.7458 34.8263 37.2767C35.3502 36.8077 35.7269 36.1501 35.8978 35.4059" stroke="white" stroke-linecap="round"/>
-              <circle cx="38" cy="24" r="2" fill="white"/>
-              <defs>
-              <filter id="filter0_d_370_727" x="0.8" y="0.8" width="64.4" height="64.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-              <feOffset dy="3"/>
-              <feGaussianBlur stdDeviation="5.1"/>
-              <feComposite in2="hardAlpha" operator="out"/>
-              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.44 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_370_727"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_370_727" result="shape"/>
-              </filter>
-              </defs>
-            </svg>
-            <img alt="img" src="assets/img/Group 9011.png" class="img-fluid w-100 d-block h-154 h-sm-auto">
-          </div>
-          <div class="row g-4 mx-0 mt-0">
-            <div class="col-xl-4 col-md-6">
-              <div class="position-relative h-175 p-4">
-               <!-- bg -->
-               <div class="rounded-20 shadow3 h-81 w-82 m-auto position-absolute -top-8 -rotate-2 end-0 start-0 bottom-0 bg-white"></div>
-               <div class="rounded-20 shadow3 h-81 w-88 m-auto position-absolute top-12 end-0 start-0 bottom-0 z-1 bg-white"></div>
-               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
-               <!--  -->
-               <div class="d-flex align-items-center justify-content-between position-relative mt-4">
-                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.8345 12.5C11.9653 12.5 12.0907 12.4473 12.1832 12.3536C12.2757 12.2598 12.3276 12.1326 12.3276 12C12.3276 11.8674 12.2757 11.7402 12.1832 11.6464C12.0907 11.5527 11.9653 11.5 11.8345 11.5C11.7038 11.5 11.5783 11.5527 11.4859 11.6464C11.3934 11.7402 11.3414 11.8674 11.3414 12C11.3414 12.1326 11.3934 12.2598 11.4859 12.3536C11.5783 12.4473 11.7038 12.5 11.8345 12.5ZM11.8345 18.5C11.9653 18.5 12.0907 18.4473 12.1832 18.3536C12.2757 18.2598 12.3276 18.1326 12.3276 18C12.3276 17.8674 12.2757 17.7402 12.1832 17.6464C12.0907 17.5527 11.9653 17.5 11.8345 17.5C11.7038 17.5 11.5783 17.5527 11.4859 17.6464C11.3934 17.7402 11.3414 17.8674 11.3414 18C11.3414 18.1326 11.3934 18.2598 11.4859 18.3536C11.5783 18.4473 11.7038 18.5 11.8345 18.5ZM11.8345 6.5C11.9653 6.5 12.0907 6.44732 12.1832 6.35355C12.2757 6.25979 12.3276 6.13261 12.3276 6C12.3276 5.86739 12.2757 5.74021 12.1832 5.64645C12.0907 5.55268 11.9653 5.5 11.8345 5.5C11.7038 5.5 11.5783 5.55268 11.4859 5.64645C11.3934 5.74021 11.3414 5.86739 11.3414 6C11.3414 6.13261 11.3934 6.25979 11.4859 6.35355C11.5783 6.44732 11.7038 6.5 11.8345 6.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg width="49" height="42" viewBox="0 0 49 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_d_393_1021)">
-                  <path opacity="0.54" d="M6.125 12.6667C6.125 9.83832 6.125 8.42411 7.00368 7.54543C7.88236 6.66675 9.29657 6.66675 12.125 6.66675H36.875C39.7034 6.66675 41.1176 6.66675 41.9963 7.54543C42.875 8.42411 42.875 9.83832 42.875 12.6667V19.7001C42.875 19.8415 42.875 19.9122 42.8311 19.9561C42.7871 20.0001 42.7164 20.0001 42.575 20.0001H32.5833C30.6977 20.0001 29.7549 20.0001 29.1691 20.5859C28.5833 21.1717 28.5833 22.1145 28.5833 24.0001V24.3334C28.5833 26.219 28.5833 27.1618 29.1691 27.7476C29.7549 28.3334 30.6977 28.3334 32.5833 28.3334H42.6369C42.7191 28.3334 42.7602 28.3334 42.7918 28.3491C42.821 28.3636 42.8448 28.3874 42.8593 28.4167C42.875 28.4482 42.875 28.4893 42.875 28.5715V28.5715C42.875 30.2157 42.875 31.0378 42.5615 31.6687C42.2704 32.2543 41.7959 32.7288 41.2102 33.0199C40.5794 33.3334 39.7573 33.3334 38.1131 33.3334H12.125C9.29657 33.3334 7.88236 33.3334 7.00368 32.4547C6.125 31.5761 6.125 30.1618 6.125 27.3334V12.6667Z" fill="white"/>
-                  <path d="M28.5834 22C28.5834 20.8954 29.4788 20 30.5834 20H42.725C42.8079 20 42.875 20.0672 42.875 20.15V28.1833C42.875 28.2662 42.8079 28.3333 42.725 28.3333H30.5834C29.4788 28.3333 28.5834 27.4379 28.5834 26.3333V22Z" fill="#008BF9"/>
-                  <rect x="12.25" y="11.6667" width="12.25" height="1.66667" rx="0.833333" fill="#008BF9"/>
-                  </g>
-                  <defs>
-                  <filter id="filter0_d_393_1021" x="-4" y="0" width="57" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="4"/>
-                  <feGaussianBlur stdDeviation="2"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_393_1021"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_393_1021" result="shape"/>
-                  </filter>
-                  </defs>
-                </svg>
-               </div>
-               <p class="text-white font-bold position-relative me-3 mt-1 mb-2 fs-sm-12">بیمه های من</p>
-               <div class="d-flex align-items-center gap-1 position-relative me-3">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.81">
-                  <path d="M9 10L12.2581 12.4436C12.6766 12.7574 13.2662 12.6957 13.6107 12.3021L20 5" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M21 12C21 13.8805 20.411 15.7137 19.3156 17.2423C18.2203 18.7709 16.6736 19.9179 14.893 20.5224C13.1123 21.1268 11.187 21.1583 9.38744 20.6125C7.58792 20.0666 6.00459 18.9707 4.85982 17.4789C3.71505 15.987 3.06635 14.174 3.00482 12.2945C2.94329 10.415 3.47203 8.56344 4.51677 6.99987C5.56152 5.4363 7.06979 4.23925 8.82975 3.57685C10.5897 2.91444 12.513 2.81996 14.3294 3.30667" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                  </g>
-                </svg>
-                <p class="mb-0 fs-14 text-white-50">۲ بیمه فعال</p>
-               </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-              <div class="position-relative h-175 p-4">
-               <!-- bg -->
-               <div class="rounded-20 shadow3 h-81 w-82 m-auto position-absolute -top-8 -rotate-2 end-0 start-0 bottom-0 bg-white"></div>
-               <div class="rounded-20 shadow3 h-81 w-88 m-auto position-absolute top-12 end-0 start-0 bottom-0 z-1 bg-white"></div>
-               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
-               <!--  -->
-               <div class="d-flex align-items-center justify-content-between position-relative mt-4">
-                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.8345 12.5C11.9653 12.5 12.0907 12.4473 12.1832 12.3536C12.2757 12.2598 12.3276 12.1326 12.3276 12C12.3276 11.8674 12.2757 11.7402 12.1832 11.6464C12.0907 11.5527 11.9653 11.5 11.8345 11.5C11.7038 11.5 11.5783 11.5527 11.4859 11.6464C11.3934 11.7402 11.3414 11.8674 11.3414 12C11.3414 12.1326 11.3934 12.2598 11.4859 12.3536C11.5783 12.4473 11.7038 12.5 11.8345 12.5ZM11.8345 18.5C11.9653 18.5 12.0907 18.4473 12.1832 18.3536C12.2757 18.2598 12.3276 18.1326 12.3276 18C12.3276 17.8674 12.2757 17.7402 12.1832 17.6464C12.0907 17.5527 11.9653 17.5 11.8345 17.5C11.7038 17.5 11.5783 17.5527 11.4859 17.6464C11.3934 17.7402 11.3414 17.8674 11.3414 18C11.3414 18.1326 11.3934 18.2598 11.4859 18.3536C11.5783 18.4473 11.7038 18.5 11.8345 18.5ZM11.8345 6.5C11.9653 6.5 12.0907 6.44732 12.1832 6.35355C12.2757 6.25979 12.3276 6.13261 12.3276 6C12.3276 5.86739 12.2757 5.74021 12.1832 5.64645C12.0907 5.55268 11.9653 5.5 11.8345 5.5C11.7038 5.5 11.5783 5.55268 11.4859 5.64645C11.3934 5.74021 11.3414 5.86739 11.3414 6C11.3414 6.13261 11.3934 6.25979 11.4859 6.35355C11.5783 6.44732 11.7038 6.5 11.8345 6.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g filter="url(#filter0_d_389_819)">
-                  <circle cx="22" cy="22" r="16.5" fill="white" fill-opacity="0.49" shape-rendering="crispEdges"/>
-                  </g>
-                  <path d="M22 9.46675C22 9.32467 22 9.25363 22.0451 9.20949C22.0903 9.16535 22.1602 9.16699 22.3 9.17025C24.4488 9.22049 26.5524 9.80977 28.4166 10.8861C30.3675 12.0124 31.9876 13.6325 33.114 15.5834C34.2403 17.5343 34.8333 19.7474 34.8333 22.0001C34.8333 24.2528 34.2403 26.4658 33.114 28.4167C31.9876 30.3677 30.3675 31.9877 28.4166 33.1141C26.4657 34.2404 24.2527 34.8334 22 34.8334C19.7472 34.8334 17.5342 34.2404 15.5833 33.1141C13.7191 32.0378 12.1569 30.5106 11.039 28.6748C10.9663 28.5554 10.9299 28.4957 10.9456 28.4345C10.9612 28.3733 11.0227 28.3378 11.1458 28.2667L21.85 22.0867C21.9232 22.0444 21.9598 22.0233 21.9799 21.9885C22 21.9537 22 21.9114 22 21.8269V9.46675Z" fill="#008BF9"/>
-                  <defs>
-                  <filter id="filter0_d_389_819" x="1.5" y="5.5" width="41" height="41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dy="4"/>
-                  <feGaussianBlur stdDeviation="2"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.11 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_389_819"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_389_819" result="shape"/>
-                  </filter>
-                  </defs>
-                </svg>
-               </div>
-               <p class="text-white font-bold position-relative me-3 mt-1 mb-2 fs-sm-12">اقساط بیمه نامه</p>
-               <div class="d-flex align-items-center gap-1 position-relative me-3">
-                <p class="mb-0 fs-14 text-white-50">۱۲ قسط باقی مانده</p>
-               </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-              <div class="position-relative h-175 p-4">
-               <!-- bg -->
-               <div class="rounded-20 shadow3 h-81 w-82 m-auto position-absolute -top-8 -rotate-2 end-0 start-0 bottom-0 bg-white"></div>
-               <div class="rounded-20 shadow3 h-81 w-88 m-auto position-absolute top-12 end-0 start-0 bottom-0 z-1 bg-white"></div>
-               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
-               <!--  -->
-               <div class="d-flex align-items-center justify-content-between position-relative mt-4">
-                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.8345 12.5C11.9653 12.5 12.0907 12.4473 12.1832 12.3536C12.2757 12.2598 12.3276 12.1326 12.3276 12C12.3276 11.8674 12.2757 11.7402 12.1832 11.6464C12.0907 11.5527 11.9653 11.5 11.8345 11.5C11.7038 11.5 11.5783 11.5527 11.4859 11.6464C11.3934 11.7402 11.3414 11.8674 11.3414 12C11.3414 12.1326 11.3934 12.2598 11.4859 12.3536C11.5783 12.4473 11.7038 12.5 11.8345 12.5ZM11.8345 18.5C11.9653 18.5 12.0907 18.4473 12.1832 18.3536C12.2757 18.2598 12.3276 18.1326 12.3276 18C12.3276 17.8674 12.2757 17.7402 12.1832 17.6464C12.0907 17.5527 11.9653 17.5 11.8345 17.5C11.7038 17.5 11.5783 17.5527 11.4859 17.6464C11.3934 17.7402 11.3414 17.8674 11.3414 18C11.3414 18.1326 11.3934 18.2598 11.4859 18.3536C11.5783 18.4473 11.7038 18.5 11.8345 18.5ZM11.8345 6.5C11.9653 6.5 12.0907 6.44732 12.1832 6.35355C12.2757 6.25979 12.3276 6.13261 12.3276 6C12.3276 5.86739 12.2757 5.74021 12.1832 5.64645C12.0907 5.55268 11.9653 5.5 11.8345 5.5C11.7038 5.5 11.5783 5.55268 11.4859 5.64645C11.3934 5.74021 11.3414 5.86739 11.3414 6C11.3414 6.13261 11.3934 6.25979 11.4859 6.35355C11.5783 6.44732 11.7038 6.5 11.8345 6.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="8.125" y="4.875" width="17.875" height="21.125" rx="2" fill="#0E91F9"/>
-                  <path d="M14.625 11.375L21.125 11.375" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
-                  <path d="M14.625 24.375L19.5 24.375" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
-                  <path d="M14.625 17.875L24.375 17.875" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
-                  <path d="M30.875 17.875V10.875C30.875 8.04657 30.875 6.63236 29.9963 5.75368C29.1176 4.875 27.7034 4.875 24.875 4.875H14.125C11.2966 4.875 9.88236 4.875 9.00368 5.75368C8.125 6.63236 8.125 8.04657 8.125 10.875V28.125C8.125 30.9534 8.125 32.3676 9.00368 33.2463C9.88236 34.125 11.2966 34.125 14.125 34.125H19.5" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
-                  <circle cx="28.4375" cy="28.4375" r="4.0625" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
-                  <path d="M34.125 34.125L31.6875 31.6875" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
-                </svg>
-               </div>
-               <p class="text-white font-bold position-relative me-3 mt-1 mb-2 fs-sm-12">سوابق ثبت بیمه های صادر شده</p>
-               <div class="d-flex align-items-center gap-1 position-relative me-3">
-                <p class="mb-0 fs-14 text-white-50">۱۶ اسفند بیمه بدنه ثبت شد.</p>
-               </div>
-              </div>
+          <div class="border-bottom">
+            <div class="d-inline-flex align-items-center gap-2 border-b-main-3 pb-2">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21.1313C14.0822 21.1313 16.1 20.4094 17.7095 19.0884C19.3191 17.7675 20.4209 15.9294 20.8271 13.8872C21.2333 11.845 20.9188 9.72511 19.9373 7.88878C18.9558 6.05244 17.3679 4.61326 15.4442 3.81643C13.5205 3.01961 11.38 2.91445 9.38744 3.51888C7.3949 4.12331 5.67358 5.39993 4.51677 7.13121C3.35997 8.8625 2.83925 10.9413 3.04334 13.0135C3.24743 15.0857 4.1637 17.023 5.63604 18.4953" stroke="#008BF9" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 10.1313L12.402 14.4489C11.7465 15.2356 11.4187 15.6289 10.9781 15.6489C10.5375 15.6689 10.1755 15.3068 9.45139 14.5827L8 13.1313" stroke="#008BF9" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <p class="mb-0 fs-20 text-main">پرداخت قسط</p>
             </div>
           </div>
+          <form class="mt-4 border rounded-15 p-4">
+            <div class="border-bottom pb-4 mb-4 payType">
+              <label class="cursor-pointer d-flex align-items-center gap-2 mb-4">
+               <input type="radio" name="type" class="selectType form-check-input" checked>
+               <p class="mb-0 fs-14 font-bold">به صورت کارت به کارت</p>
+              </label>
+              <p class="fs-14 text-secondary max-w-380 font-bold">مبلغ قسط را به شماره کارت 2035-5588-8665-8885 به نام ... واریز کنید. سپس رسید پرداخت در قسمت زیر بارگذاری کنید.</p>
+              <a class="d-flex align-items-center justify-content-center gap-2 bg-main text-white fs-18 font-bold rounded-15 w-217 h-55">
+                <p class="mb-0">بارگذاری رسید</p>
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 14L11.7929 14.7071L12.5 15.4142L13.2071 14.7071L12.5 14ZM13.5 5C13.5 4.44772 13.0523 4 12.5 4C11.9477 4 11.5 4.44771 11.5 5L13.5 5ZM6.79289 9.70711L11.7929 14.7071L13.2071 13.2929L8.20711 8.29289L6.79289 9.70711ZM13.2071 14.7071L18.2071 9.70711L16.7929 8.29289L11.7929 13.2929L13.2071 14.7071ZM13.5 14L13.5 5L11.5 5L11.5 14L13.5 14Z" fill="white"/>
+                  <path d="M5.5 14L5.5 15C5.5 16.1046 6.39543 17 7.5 17L17.5 17C18.6046 17 19.5 16.1046 19.5 15V14" stroke="white" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+            <div class="opacity-30 payType">
+              <label class="cursor-pointer d-flex align-items-center gap-2 mb-4">
+               <input type="radio" name="type" class="selectType form-check-input">
+               <p class="mb-0 fs-14 font-bold">درگاه بانکی</p>
+              </label>
+              <div class="max-w-380 d-flex align-items-center justify-content-between gap-2 fs-12 pe-4">
+                <label class="cursor-pointer d-flex align-items-center gap-2 mb-4">
+                  <input type="radio" name="bank" class="form-check-input">
+                  <p class="mb-0">بانک تجارت</p>
+                 </label>
+                 <label class="cursor-pointer d-flex align-items-center gap-2 mb-4">
+                  <input type="radio" name="bank" class="form-check-input">
+                  <p class="mb-0">زرین پال</p>
+                 </label>
+              </div>
+              <a class="d-flex align-items-center justify-content-center gap-2 bg-main text-white fs-18 font-bold rounded-15 w-200 h-60">
+                <p class="mb-0">ورود به درگاه بانکی</p>
+              </a>
+            </div>
+          </form>
         </div>
       </div>
     </div>

@@ -234,12 +234,20 @@ a {
     max-width: 357px;
     width: 100%;
 }
+.max-w-380 {
+    max-width: 380px;
+    width: 100%;
+}
 .max-w-450 {
     max-width: 450px;
     width: 100%;
 }
 .max-w-653 {
     max-width: 653px;
+    width: 100%;
+}
+.max-w-997 {
+    max-width: 997px;
     width: 100%;
 }
 /* border */
@@ -448,7 +456,9 @@ a {
 .opacity-none {
     opacity: 0;
 }
-
+.opacity-30 {
+    opacity: 30%;
+}
 .visible-none {
     visibility: hidden;
 }
@@ -494,7 +504,7 @@ input[type="number"] {
 }
 /* modal */
 .modal-backdrop {
-  background-color: white;
+  /* background-color: white; */
 }
 /* sidebar */
 .sidebar li:hover,.sidebar li.active{
