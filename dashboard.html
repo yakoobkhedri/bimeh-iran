@@ -32,14 +32,23 @@
     </div>
 </div>
 
-<div class="offcanvas offcanvas-bottom shadow-lg rounded-t-25 h-auto border-0" tabindex="-1" id="offcanvasBottom3" aria-labelledby="offcanvasBottomLabel">
+<div class="offcanvas offcanvas-bottom rounded-t-25 shadow4 h-auto border-0" tabindex="-1" id="offcanvasBottom3" aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-body p-4 pt-5">
-    <svg class="mx-auto d-block mt-4" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M21.7497 24.1667L30.6744 30.8602C31.0929 31.1741 31.6826 31.1124 32.027 30.7187L48.333 12.0833" stroke="#008BF9" stroke-width="3" stroke-linecap="round"/>
-      <path d="M50.75 29C50.75 33.5445 49.3265 37.9749 46.6794 41.6689C44.0323 45.3629 40.2947 48.1349 35.9913 49.5957C31.688 51.0565 27.0351 51.1327 22.6863 49.8135C18.3375 48.4942 14.5111 45.846 11.7446 42.2406C8.97804 38.6352 7.41034 34.2537 7.26165 29.7116C7.11295 25.1696 8.39074 20.695 10.9155 16.9163C13.4403 13.1377 17.0853 10.2449 21.3386 8.64405C25.5918 7.04324 30.2396 6.8149 34.6293 7.99111" stroke="#008BF9" stroke-width="3" stroke-linecap="round"/>
-    </svg>
-    <p class="fw-bold mt-3 mb-0 pb-5 text-center">ثبت یادآور اقساط بیمه</p>
-    <img alt="img" src="assets/img/Group 9012.png" class="img-fluid d-block mx-auto mt-5 w-100">
+    <a data-bs-dismiss="offcanvas" aria-label="Close" class="d-flex align-items-center justify-content-end text-main gap-2 mb-5">
+      <p class="mb-0 fs-14 font-bold text-main">بازگشت</p>
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 7L1.29289 6.29289L0.585786 7L1.29289 7.70711L2 7ZM17 8C17.5523 8 18 7.55228 18 7C18 6.44772 17.5523 6 17 6V8ZM7.29289 0.292893L1.29289 6.29289L2.70711 7.70711L8.70711 1.70711L7.29289 0.292893ZM1.29289 7.70711L7.29289 13.7071L8.70711 12.2929L2.70711 6.29289L1.29289 7.70711ZM2 8H17V6H2V8Z" fill="#008BF9"/>
+      </svg>
+    </a>
+    <form class="mb-5 pb-5">
+      <div class="d-flex mb-5 rounded-20 border-main shadow-sm align-items-center px-4 h-70 justify-content-between gap-2">
+          <input placeholder="بیمه خود را جستجو کنید" type="search" class="flex-grow-1 bg-transparent border-0 outline-none py-2 fs-14 font-bold">
+          <svg class="cursor-pointer" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" transform="translate(0.5)" fill="white"></rect>
+            <path d="M21.5 20.9998L18.0967 17.5961M17.5035 4.99976C16.0216 3.75172 14.1082 2.99976 12.0192 2.99976C7.3142 2.99976 3.5 6.81439 3.5 11.52C3.5 16.2256 7.3142 20.0402 12.0192 20.0402C16.7243 20.0402 20.5385 16.2256 20.5385 11.52C20.5385 10.3377 20.2977 9.21169 19.8625 8.18827" stroke="#008BF9" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+      </div>
+  </form>
   </div>
 </div>
 
@@ -339,8 +348,8 @@
    <section class="mt-4 mb-5 pb-5">
     <div class="container">
       <div class="row mx-0 g-4">
-        <div class="col-xl-3 col-lg-4">
-          <div class="rounded-15 p-4 bg-main">
+        <div class="col-xl-3 col-lg-4 order-last order-lg-first ">
+          <div class="rounded-15 p-4 bg-main d-none d-lg-block">
             <img alt="img" src="assets/img/Mask group.png" class="d-block mx-auto w-113 h-113">
             <div class="d-flex align-items-center justify-content-between mt-2 gap-2">
              <div>
@@ -363,9 +372,9 @@
              </div>
             </div>
           </div>
-          <div class="rounded-20 mt-4 p-4 shadow2 border overflow-hidden">
+          <div class="rounded-20 rounded-lg-0 mt-4 p-4 shadow2 shadow-lg-none border-t-lg-main border border-lg-0 overflow-hidden">
            <ul class="list-unstyled fs-14 mb-0 pe-0 sidebar">
-            <li class="rounded-10 active py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 active py-2 px-lg-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -379,7 +388,7 @@
                 <p class="mb-0">پیشخوان کاربری</p>
               </a>
             </li>
-            <li class="rounded-10 py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 py-2 px-lg-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -392,7 +401,7 @@
                 <p class="mb-0">بیمه های من</p>
               </a>
             </li>
-            <li class="rounded-10 py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 py-2 px-lg-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -404,7 +413,7 @@
                 <p class="mb-0">اقساط بیمه</p>
               </a>
             </li>
-            <li class="rounded-10 py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 py-2 px-lg-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -420,7 +429,7 @@
                 <p class="mb-0">درخواست سوابق بیمه</p>
               </a>
             </li>
-            <li class="rounded-10 py-2 px-4 position-relative">
+            <li class="rounded-10 py-2 px-lg-4 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -434,9 +443,9 @@
            </ul>
           </div>
         </div>
-        <div class="col-xl-9 col-lg-8">
+        <div class="col-xl-9 col-lg-8 order-first order-lg-last">
           <div class="position-relative">
-            <svg class="position-absolute -top-2 -left-6" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="position-absolute -top-2 -left-6 -left-sm-16 w-sm-42 h-sm-42" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d_370_727)">
               <circle cx="33" cy="30" r="22" fill="#008BF9"/>
               </g>
@@ -456,21 +465,48 @@
               </filter>
               </defs>
             </svg>
-            <img alt="img" src="assets/img/Group 9011.png" class="img-fluid w-100 d-block h-154 h-sm-auto">
+            <img alt="img" src="assets/img/Group 9011.png" class="img-fluid w-100 d-block h-154 h-sm-auto d-sm-block d-none">
+            <img alt="img" src="assets/img/Group 9011.png" class="img-fluid w-100 d-block h-74 d-sm-none">
+          </div>
+          <div class="d-lg-none mt-4">
+            <div class="d-flex align-items-center justify-content-between mt-2 gap-2">
+             <div class="d-flex align-items-center gap-2">
+              <img alt="img" src="assets/img/Mask group.png" class="d-block rounded-circle w-94 h-94">
+              <div>
+               <p class="text-dark mb-1">نادر نیکان</p>
+               <p class="mb-0 text-black-50 fs-12">۰۹۱۲۳۴۵۶۷۸۹</p>
+              </div>
+             </div>
+             <div class="rounded-pill bg-main w-94 h-36 d-flex align-items-center justify-content-around">
+              <a>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.92971 19.283L5.92972 19.283L5.95149 19.2775L5.95151 19.2775L8.58384 18.6194C8.59896 18.6156 8.61396 18.6119 8.62885 18.6082C8.85159 18.5528 9.04877 18.5037 9.2278 18.4023C9.40683 18.301 9.55035 18.1571 9.71248 17.9947C9.72332 17.9838 9.73425 17.9729 9.74527 17.9618L16.9393 10.7678L16.9393 10.7678L16.9626 10.7445C17.2761 10.4311 17.5461 10.1611 17.7333 9.91573C17.9339 9.65281 18.0858 9.36038 18.0858 9C18.0858 8.63961 17.9339 8.34719 17.7333 8.08427C17.5461 7.83894 17.276 7.5689 16.9626 7.2555L16.9393 7.23223L16.5858 7.58579L16.9393 7.23223L16.7678 7.06066L16.7445 7.03738C16.4311 6.72395 16.1611 6.45388 15.9157 6.2667C15.6528 6.0661 15.3604 5.91421 15 5.91421C14.6396 5.91421 14.3472 6.0661 14.0843 6.2667C13.8389 6.45388 13.5689 6.72395 13.2555 7.03739L13.2322 7.06066L6.03816 14.2547C6.02714 14.2658 6.01619 14.2767 6.00533 14.2875C5.84286 14.4496 5.69903 14.5932 5.59766 14.7722C5.4963 14.9512 5.44723 15.1484 5.39179 15.3711C5.38809 15.386 5.38435 15.401 5.38057 15.4162L4.71704 18.0703C4.71483 18.0791 4.7126 18.088 4.71036 18.097C4.67112 18.2537 4.62921 18.421 4.61546 18.5615C4.60032 18.7163 4.60385 18.9773 4.81326 19.1867C5.02267 19.3961 5.28373 19.3997 5.43846 19.3845C5.57899 19.3708 5.74633 19.3289 5.90301 19.2896C5.91195 19.2874 5.92085 19.2852 5.92971 19.283Z" stroke="white"></path>
+                  <path d="M12.5 7.5L15.5 5.5L18.5 8.5L16.5 11.5L12.5 7.5Z" fill="white"></path>
+                </svg>
+              </a>
+              <a>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 18.9282C9.21615 19.6303 10.5957 20 12 20C13.4043 20 14.7838 19.6303 16 18.9282C17.2162 18.2261 18.2261 17.2162 18.9282 16C19.6303 14.7838 20 13.4043 20 12C20 10.5957 19.6303 9.21615 18.9282 8C18.2261 6.78385 17.2162 5.77394 16 5.0718C14.7838 4.36965 13.4043 4 12 4C10.5957 4 9.21615 4.36965 8 5.0718" stroke="white" stroke-width="2"></path>
+                  <path d="M2 12L1.21913 11.3753L0.719375 12L1.21913 12.6247L2 12ZM11 13C11.5523 13 12 12.5523 12 12C12 11.4477 11.5523 11 11 11V13ZM5.21913 6.3753L1.21913 11.3753L2.78087 12.6247L6.78087 7.6247L5.21913 6.3753ZM1.21913 12.6247L5.21913 17.6247L6.78087 16.3753L2.78087 11.3753L1.21913 12.6247ZM2 13H11V11H2V13Z" fill="white"></path>
+                </svg>
+              </a>
+             </div>
+            </div>
           </div>
           <div class="row g-4 mx-0 mt-0">
-            <div class="col-xl-4 col-md-6">
-              <div class="position-relative h-175 p-4">
+            <div class="col-4">
+              <div class="position-relative h-175 h-md-95 w-md-103 py-4">
                <!-- bg -->
                <div class="rounded-20 shadow3 h-81 w-82 m-auto position-absolute -top-8 -rotate-2 end-0 start-0 bottom-0 bg-white"></div>
                <div class="rounded-20 shadow3 h-81 w-88 m-auto position-absolute top-12 end-0 start-0 bottom-0 z-1 bg-white"></div>
-               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
+               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid d-none d-md-block position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
+               <img alt="img" src="assets/img/Rectangle 12 (2).png" class="img-fluid d-md-none position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
                <!--  -->
-               <div class="d-flex align-items-center justify-content-between position-relative mt-4">
-                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
+               <div class="d-flex align-items-center justify-content-md-between justify-content-end position-relative mt-md-4 px-2 px-md-4">
+                <svg class="cursor-pointer d-none d-md-block" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8345 12.5C11.9653 12.5 12.0907 12.4473 12.1832 12.3536C12.2757 12.2598 12.3276 12.1326 12.3276 12C12.3276 11.8674 12.2757 11.7402 12.1832 11.6464C12.0907 11.5527 11.9653 11.5 11.8345 11.5C11.7038 11.5 11.5783 11.5527 11.4859 11.6464C11.3934 11.7402 11.3414 11.8674 11.3414 12C11.3414 12.1326 11.3934 12.2598 11.4859 12.3536C11.5783 12.4473 11.7038 12.5 11.8345 12.5ZM11.8345 18.5C11.9653 18.5 12.0907 18.4473 12.1832 18.3536C12.2757 18.2598 12.3276 18.1326 12.3276 18C12.3276 17.8674 12.2757 17.7402 12.1832 17.6464C12.0907 17.5527 11.9653 17.5 11.8345 17.5C11.7038 17.5 11.5783 17.5527 11.4859 17.6464C11.3934 17.7402 11.3414 17.8674 11.3414 18C11.3414 18.1326 11.3934 18.2598 11.4859 18.3536C11.5783 18.4473 11.7038 18.5 11.8345 18.5ZM11.8345 6.5C11.9653 6.5 12.0907 6.44732 12.1832 6.35355C12.2757 6.25979 12.3276 6.13261 12.3276 6C12.3276 5.86739 12.2757 5.74021 12.1832 5.64645C12.0907 5.55268 11.9653 5.5 11.8345 5.5C11.7038 5.5 11.5783 5.55268 11.4859 5.64645C11.3934 5.74021 11.3414 5.86739 11.3414 6C11.3414 6.13261 11.3934 6.25979 11.4859 6.35355C11.5783 6.44732 11.7038 6.5 11.8345 6.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <svg width="49" height="42" viewBox="0 0 49 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-md-24 h-md-24" width="49" height="42" viewBox="0 0 49 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_393_1021)">
                   <path opacity="0.54" d="M6.125 12.6667C6.125 9.83832 6.125 8.42411 7.00368 7.54543C7.88236 6.66675 9.29657 6.66675 12.125 6.66675H36.875C39.7034 6.66675 41.1176 6.66675 41.9963 7.54543C42.875 8.42411 42.875 9.83832 42.875 12.6667V19.7001C42.875 19.8415 42.875 19.9122 42.8311 19.9561C42.7871 20.0001 42.7164 20.0001 42.575 20.0001H32.5833C30.6977 20.0001 29.7549 20.0001 29.1691 20.5859C28.5833 21.1717 28.5833 22.1145 28.5833 24.0001V24.3334C28.5833 26.219 28.5833 27.1618 29.1691 27.7476C29.7549 28.3334 30.6977 28.3334 32.5833 28.3334H42.6369C42.7191 28.3334 42.7602 28.3334 42.7918 28.3491C42.821 28.3636 42.8448 28.3874 42.8593 28.4167C42.875 28.4482 42.875 28.4893 42.875 28.5715V28.5715C42.875 30.2157 42.875 31.0378 42.5615 31.6687C42.2704 32.2543 41.7959 32.7288 41.2102 33.0199C40.5794 33.3334 39.7573 33.3334 38.1131 33.3334H12.125C9.29657 33.3334 7.88236 33.3334 7.00368 32.4547C6.125 31.5761 6.125 30.1618 6.125 27.3334V12.6667Z" fill="white"/>
                   <path d="M28.5834 22C28.5834 20.8954 29.4788 20 30.5834 20H42.725C42.8079 20 42.875 20.0672 42.875 20.15V28.1833C42.875 28.2662 42.8079 28.3333 42.725 28.3333H30.5834C29.4788 28.3333 28.5834 27.4379 28.5834 26.3333V22Z" fill="#008BF9"/>
@@ -490,30 +526,31 @@
                   </defs>
                 </svg>
                </div>
-               <p class="text-white font-bold position-relative me-3 mt-1 mb-2 fs-sm-12">بیمه های من</p>
-               <div class="d-flex align-items-center gap-1 position-relative me-3">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <p class="text-white font-bold position-relative me-3 mt-1 mb-md-1 mb-0 fs-md-8 px-0 px-md-1 px-xl-4">بیمه های من</p>
+               <div class="d-flex align-items-center gap-1 position-relative me-md-3 me-1 px-2 px-md-1 px-xl-4">
+                <svg class="w-md-15 h-md-15" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.81">
                   <path d="M9 10L12.2581 12.4436C12.6766 12.7574 13.2662 12.6957 13.6107 12.3021L20 5" stroke="white" stroke-width="2" stroke-linecap="round"/>
                   <path d="M21 12C21 13.8805 20.411 15.7137 19.3156 17.2423C18.2203 18.7709 16.6736 19.9179 14.893 20.5224C13.1123 21.1268 11.187 21.1583 9.38744 20.6125C7.58792 20.0666 6.00459 18.9707 4.85982 17.4789C3.71505 15.987 3.06635 14.174 3.00482 12.2945C2.94329 10.415 3.47203 8.56344 4.51677 6.99987C5.56152 5.4363 7.06979 4.23925 8.82975 3.57685C10.5897 2.91444 12.513 2.81996 14.3294 3.30667" stroke="white" stroke-width="2" stroke-linecap="round"/>
                   </g>
                 </svg>
-                <p class="mb-0 fs-14 text-white-50">۲ بیمه فعال</p>
+                <p class="mb-0 fs-12 text-white-50 fs-md-7">۲ بیمه فعال</p>
                </div>
               </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-              <div class="position-relative h-175 p-4">
+            <div class="col-4">
+              <div class="position-relative h-175 h-md-95 w-md-103 py-4">
                <!-- bg -->
                <div class="rounded-20 shadow3 h-81 w-82 m-auto position-absolute -top-8 -rotate-2 end-0 start-0 bottom-0 bg-white"></div>
                <div class="rounded-20 shadow3 h-81 w-88 m-auto position-absolute top-12 end-0 start-0 bottom-0 z-1 bg-white"></div>
-               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
+               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid d-none d-md-block position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
+               <img alt="img" src="assets/img/Rectangle 12 (2).png" class="img-fluid d-md-none position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
                <!--  -->
-               <div class="d-flex align-items-center justify-content-between position-relative mt-4">
-                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
+               <div class="d-flex align-items-center justify-content-md-between justify-content-end position-relative mt-md-4 px-2 px-md-4">
+                <svg class="cursor-pointer d-none d-md-block" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8345 12.5C11.9653 12.5 12.0907 12.4473 12.1832 12.3536C12.2757 12.2598 12.3276 12.1326 12.3276 12C12.3276 11.8674 12.2757 11.7402 12.1832 11.6464C12.0907 11.5527 11.9653 11.5 11.8345 11.5C11.7038 11.5 11.5783 11.5527 11.4859 11.6464C11.3934 11.7402 11.3414 11.8674 11.3414 12C11.3414 12.1326 11.3934 12.2598 11.4859 12.3536C11.5783 12.4473 11.7038 12.5 11.8345 12.5ZM11.8345 18.5C11.9653 18.5 12.0907 18.4473 12.1832 18.3536C12.2757 18.2598 12.3276 18.1326 12.3276 18C12.3276 17.8674 12.2757 17.7402 12.1832 17.6464C12.0907 17.5527 11.9653 17.5 11.8345 17.5C11.7038 17.5 11.5783 17.5527 11.4859 17.6464C11.3934 17.7402 11.3414 17.8674 11.3414 18C11.3414 18.1326 11.3934 18.2598 11.4859 18.3536C11.5783 18.4473 11.7038 18.5 11.8345 18.5ZM11.8345 6.5C11.9653 6.5 12.0907 6.44732 12.1832 6.35355C12.2757 6.25979 12.3276 6.13261 12.3276 6C12.3276 5.86739 12.2757 5.74021 12.1832 5.64645C12.0907 5.55268 11.9653 5.5 11.8345 5.5C11.7038 5.5 11.5783 5.55268 11.4859 5.64645C11.3934 5.74021 11.3414 5.86739 11.3414 6C11.3414 6.13261 11.3934 6.25979 11.4859 6.35355C11.5783 6.44732 11.7038 6.5 11.8345 6.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-md-24 h-md-24" width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_389_819)">
                   <circle cx="22" cy="22" r="16.5" fill="white" fill-opacity="0.49" shape-rendering="crispEdges"/>
                   </g>
@@ -532,24 +569,25 @@
                   </defs>
                 </svg>
                </div>
-               <p class="text-white font-bold position-relative me-3 mt-1 mb-2 fs-sm-12">اقساط بیمه نامه</p>
-               <div class="d-flex align-items-center gap-1 position-relative me-3">
-                <p class="mb-0 fs-14 text-white-50">۱۲ قسط باقی مانده</p>
+               <p class="text-white font-bold position-relative me-3 mt-1 mb-md-1 mb-0 fs-md-8 px-0 px-md-1 px-xl-4">اقساط بیمه نامه</p>
+               <div class="d-flex align-items-center gap-1 position-relative me-md-3 me-1 px-2 px-md-1 px-xl-4">
+                <p class="mb-0 fs-12 text-white-50 fs-md-7">۱۲ قسط باقی مانده</p>
                </div>
               </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-              <div class="position-relative h-175 p-4">
+            <div class="col-4">
+              <div class="position-relative h-175 h-md-95 w-md-103 py-4">
                <!-- bg -->
                <div class="rounded-20 shadow3 h-81 w-82 m-auto position-absolute -top-8 -rotate-2 end-0 start-0 bottom-0 bg-white"></div>
                <div class="rounded-20 shadow3 h-81 w-88 m-auto position-absolute top-12 end-0 start-0 bottom-0 z-1 bg-white"></div>
-               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
+               <img alt="img" src="assets/img/Rectangle 12.png" class="img-fluid d-none d-md-block position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
+               <img alt="img" src="assets/img/Rectangle 12 (2).png" class="img-fluid d-md-none position-absolute -z-0 w-100 h-100 top-0 start-0 bottom-0 end-0">
                <!--  -->
-               <div class="d-flex align-items-center justify-content-between position-relative mt-4">
-                <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
+               <div class="d-flex align-items-center justify-content-md-between justify-content-end position-relative mt-md-4 px-2 px-md-4">
+                <svg class="cursor-pointer d-none d-md-block" width="24" height="24" viewBox="0 0 24 24 fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.8345 12.5C11.9653 12.5 12.0907 12.4473 12.1832 12.3536C12.2757 12.2598 12.3276 12.1326 12.3276 12C12.3276 11.8674 12.2757 11.7402 12.1832 11.6464C12.0907 11.5527 11.9653 11.5 11.8345 11.5C11.7038 11.5 11.5783 11.5527 11.4859 11.6464C11.3934 11.7402 11.3414 11.8674 11.3414 12C11.3414 12.1326 11.3934 12.2598 11.4859 12.3536C11.5783 12.4473 11.7038 12.5 11.8345 12.5ZM11.8345 18.5C11.9653 18.5 12.0907 18.4473 12.1832 18.3536C12.2757 18.2598 12.3276 18.1326 12.3276 18C12.3276 17.8674 12.2757 17.7402 12.1832 17.6464C12.0907 17.5527 11.9653 17.5 11.8345 17.5C11.7038 17.5 11.5783 17.5527 11.4859 17.6464C11.3934 17.7402 11.3414 17.8674 11.3414 18C11.3414 18.1326 11.3934 18.2598 11.4859 18.3536C11.5783 18.4473 11.7038 18.5 11.8345 18.5ZM11.8345 6.5C11.9653 6.5 12.0907 6.44732 12.1832 6.35355C12.2757 6.25979 12.3276 6.13261 12.3276 6C12.3276 5.86739 12.2757 5.74021 12.1832 5.64645C12.0907 5.55268 11.9653 5.5 11.8345 5.5C11.7038 5.5 11.5783 5.55268 11.4859 5.64645C11.3934 5.74021 11.3414 5.86739 11.3414 6C11.3414 6.13261 11.3934 6.25979 11.4859 6.35355C11.5783 6.44732 11.7038 6.5 11.8345 6.5Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-md-24 h-md-24" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="8.125" y="4.875" width="17.875" height="21.125" rx="2" fill="#0E91F9"/>
                   <path d="M14.625 11.375L21.125 11.375" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
                   <path d="M14.625 24.375L19.5 24.375" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
@@ -559,9 +597,9 @@
                   <path d="M34.125 34.125L31.6875 31.6875" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
                 </svg>
                </div>
-               <p class="text-white font-bold position-relative me-3 mt-1 mb-2 fs-sm-12">سوابق ثبت بیمه های صادر شده</p>
-               <div class="d-flex align-items-center gap-1 position-relative me-3">
-                <p class="mb-0 fs-14 text-white-50">۱۶ اسفند بیمه بدنه ثبت شد.</p>
+               <p class="text-white font-bold position-relative me-3 mt-1 mb-md-1 mb-0 fs-md-8 px-0 px-md-1 px-xl-4">سوابق ثبت بیمه <span class="d-md-none">...</span><span class="d-none d-md-inline-block"> های صادر شده</span></p>
+               <div class="d-flex align-items-center gap-1 position-relative me-md-3 me-1 px-2 px-md-1 px-xl-4">
+                <p class="mb-0 fs-12 text-white-50 fs-md-7">۱۶ اسفند بیمه بدنه ثبت شد.</p>
                </div>
               </div>
             </div>

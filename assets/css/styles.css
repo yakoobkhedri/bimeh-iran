@@ -119,6 +119,9 @@ a {
 .shadow3 {
     box-shadow: 0px 0px 4px 0px #00000025;
 }
+.shadow4 {
+    box-shadow: 0px -12px 29px 0px #008BF939;
+}
 /* rotate */
 .-rotate-2{
     transform: rotate(-2deg);
@@ -300,6 +303,9 @@ a {
 .w-91 {
     width: 91px;
 }
+.w-94 {
+    width: 94px;
+}
 .w-104 {
     width: 104px;
 }
@@ -364,8 +370,14 @@ a {
 .h-70 {
     height: 70px!important;
 }
+.h-74 {
+    height: 74px!important;
+}
 .h-81 {
     height: 81%;
+}
+.h-94 {
+    height: 94%;
 }
 .h-100vh{
     height: 100vh;
@@ -577,11 +589,32 @@ header .showHover:hover .dropdown{
     .mt-lg-6{
         margin-top: 6px;
     }
+    .sidebar li:hover,.sidebar li.active{
+        background-color: transparent;
+    }
+    .sidebar li a{
+       color: #222222;
+    }
+    .sidebar li:hover a,.sidebar li.active a{
+        color: #008BF9;
+    }
+    .sidebar li svg rect,.sidebar li svg path{
+        stroke: #222222!important;
+    }
+    .sidebar li:hover svg rect,.sidebar li.active svg rect,.sidebar li:hover svg path,.sidebar li.active svg path{
+        stroke: #008BF9!important;
+    }
+    .sidebar li:hover >svg,.sidebar li.active >svg{
+        opacity: 0;
+     }
     #banner{
         background-image: none;
     }
     .w-lg-101{
         width: 101px!important;
+    }
+    .fs-lg-12{
+        font-size: 12px;
     }
     .fs-lg-16{
         font-size: 16px;
@@ -592,6 +625,18 @@ header .showHover:hover .dropdown{
     .top-lg-0{
         top: 0;
     }
+    .shadow-lg-none{
+        box-shadow: none;
+    }
+    .border-lg-0{
+        border: none!important;
+    }
+    .border-t-lg-main{
+        border-top: 2px solid #008BF912!important;
+    }
+    .rounded-lg-0 {
+        border-radius: 0;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -601,8 +646,38 @@ header .showHover:hover .dropdown{
     .stroke-md-main{
         stroke: #008BF9!important;
     }
+    .fs-md-7{
+        font-size: 7px;
+    }
+    .fs-md-8{
+        font-size: 8px;
+    }
+    .fs-md-11{
+        font-size: 11px;
+    }
+    .fs-md-12{
+        font-size: 12px;
+    }
+    .h-md-15{
+        height: 15px;
+    }
+    .h-md-24{
+        height: 24px;
+    }
+    .h-md-95{
+        height: 95px;
+    }
     .h-md-230{
         height: 230px;
+    }
+    .w-md-103{
+        width: 103px;
+    }
+    .w-md-24{
+        width: 24px;
+    }
+    .w-md-15{
+        width: 15px;
     }
 }
 
@@ -657,6 +732,9 @@ header .showHover:hover .dropdown{
     }
     .modal-backdrop {
         background-color: black;
+      }
+      .-left-sm-16{
+        left: -16px;
       }
 }
 
