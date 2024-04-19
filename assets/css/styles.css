@@ -670,6 +670,9 @@ header .showHover:hover .dropdown{
     .h-md-24{
         height: 24px;
     }
+    .h-md-33{
+        height: 33px;
+    }
     .h-md-95{
         height: 95px;
     }
@@ -678,6 +681,9 @@ header .showHover:hover .dropdown{
     }
     .w-md-103{
         width: 103px;
+    }
+    .w-md-33{
+        width: 33px;
     }
     .w-md-24{
         width: 24px;
@@ -690,6 +696,9 @@ header .showHover:hover .dropdown{
     }
     .border-b-md-0{
         border-bottom: none!important;
+    }
+    .rounded-md-10{
+        border-radius: 10px!important;
     }
     .rounded-md-15{
         border-radius: 15px;
