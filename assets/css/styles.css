@@ -679,6 +679,18 @@ header .showHover:hover .dropdown{
     .w-md-15{
         width: 15px;
     }
+    .shadow-md-4 {
+        box-shadow: 0px 0px 8px 0px #008BF912;
+    }
+    .border-b-md-0{
+        border-bottom: none!important;
+    }
+    .rounded-md-15{
+        border-radius: 15px;
+    }
+    .border-b-md-sky{
+        border-bottom: 2px solid #008BF912!important;
+    }
 }
 
 @media only screen and (max-width:576px) {
@@ -687,6 +699,9 @@ header .showHover:hover .dropdown{
     }
     .fs-sm-12{
         font-size: 12px;
+    }
+    .fs-sm-14{
+        font-size: 14px;
     }
     .fs-sm-16{
         font-size: 16px;
@@ -705,6 +720,9 @@ header .showHover:hover .dropdown{
     }
     .w-sm-43{
         width: 43px;
+    }
+    .w-sm-24{
+        width: 24px;
     }
     .h-sm-136{
         height: 136px;

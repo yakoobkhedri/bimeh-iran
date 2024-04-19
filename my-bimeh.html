@@ -299,8 +299,8 @@
    <section class="mt-4 mb-5 pb-5">
     <div class="container">
       <div class="row mx-0 g-4">
-        <div class="col-xl-3 col-lg-4">
-          <div class="rounded-15 p-4 bg-main">
+        <div class="col-xl-3 col-lg-4 order-last order-lg-first">
+          <div class="rounded-15 p-4 bg-main d-none d-lg-block">
             <img alt="img" src="assets/img/Mask group.png" class="d-block mx-auto w-113 h-113">
             <div class="d-flex align-items-center justify-content-between mt-2 gap-2">
              <div>
@@ -323,9 +323,9 @@
              </div>
             </div>
           </div>
-          <div class="rounded-20 mt-4 p-4 shadow2 border overflow-hidden">
+          <div class="rounded-20 rounded-lg-0 mt-4 p-4 shadow2 shadow-lg-none border-t-lg-main border border-lg-0 overflow-hidden">
            <ul class="list-unstyled fs-14 mb-0 pe-0 sidebar">
-            <li class="rounded-10 py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 py-2 px-lg-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -339,7 +339,7 @@
                 <p class="mb-0">پیشخوان کاربری</p>
               </a>
             </li>
-            <li class="rounded-10 active py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 active py-2 px-lg-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -352,7 +352,7 @@
                 <p class="mb-0">بیمه های من</p>
               </a>
             </li>
-            <li class="rounded-10 py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 py-2 px-lg-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -364,7 +364,7 @@
                 <p class="mb-0">اقساط بیمه</p>
               </a>
             </li>
-            <li class="rounded-10 py-2 px-4 mb-3 position-relative">
+            <li class="rounded-10 py-2 px-lg-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -380,7 +380,7 @@
                 <p class="mb-0">درخواست سوابق بیمه</p>
               </a>
             </li>
-            <li class="rounded-10 py-2 px-4 position-relative">
+            <li class="rounded-10 py-2 px-lg-4 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 7.40381C0 3.53782 3.13401 0.403809 7 0.403809V45.4038C3.13401 45.4038 0 42.2698 0 38.4038V7.40381Z" fill="#008BF9"/>
               </svg>
@@ -394,166 +394,218 @@
            </ul>
           </div>
         </div>
-        <div class="col-xl-9 col-lg-8">
-          <div class="rounded-15 border shadow3 p-4">
-           <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3 border-bottom">
+        <div class="col-xl-9 col-lg-8 order-first order-lg-last">
+          <div class="rounded-15 border shadow-lg-none rounded-lg-0 border-lg-0 shadow3 py-lg-4">
+           <div class="d-flex align-items-center justify-content-between gap-3 border-bottom mx-3">
             <div class="d-flex align-items-center gap-2 border-b-main-3 pb-2">
-              <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-sm-24" width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.1875 5.5H13.8125C9.30469 5.5 7.05079 5.5 5.6504 6.88078C4.25 8.26156 4.25 10.4839 4.25 14.9286V18.0714C4.25 22.5161 4.25 24.7384 5.6504 26.1192C7.05079 27.5 9.30469 27.5 13.8125 27.5H20.1875C24.6953 27.5 26.9492 27.5 28.3496 26.1192C29.75 24.7384 29.75 22.5161 29.75 18.0714V14.9286C29.75 10.4839 29.75 8.26156 28.3496 6.88078C26.9492 5.5 24.6953 5.5 20.1875 5.5Z" stroke="#008BF9" stroke-width="1.5"/>
                 <path d="M9.91666 11H14.1667" stroke="#008BF9" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M21.25 20V18.5C21.25 17.5572 21.25 17.0858 21.5429 16.7929C21.8358 16.5 22.3072 16.5 23.25 16.5H27.75C28.6928 16.5 29.1642 16.5 29.4571 16.7929C29.75 17.0858 29.75 17.5572 29.75 18.5V20C29.75 20.9428 29.75 21.4142 29.4571 21.7071C29.1642 22 28.6928 22 27.75 22H23.25C22.3072 22 21.8358 22 21.5429 21.7071C21.25 21.4142 21.25 20.9428 21.25 20Z" stroke="#008BF9" stroke-width="1.5"/>
               </svg>
-              <p class="mb-1 fs-20 fw-bold text-main">بیمه های من</p>
+              <p class="mb-1 fs-20 fs-sm-14 fw-bold text-main">بیمه های من</p>
             </div>
-            <a class="rounded-10 bg-main text-white font-bold fs-12 py-2 px-4 mb-2">در خواست فیزیکی بیمه نامه</a>
+            <a class="rounded-10 bg-main text-white font-bold fs-12 py-2 px-sm-4 px-2 mb-2">در خواست فیزیکی بیمه نامه</a>
            </div>
-           <div class="table-responsive">
-             <table class="table table-hover fs-12">
-              <thead>
-                <tr>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      شماره بیمه نامه
+           <div class="table-responsive fs-12">
+             <div class="text-muted row d-none d-md-flex mx-3 font-bold border-bottom "> 
+              <div class="col-2"> 
+               <p class="mb-0 py-3">شماره بیمه نامه</p>
+              </div>
+              <div class="col-3"> 
+                <p class="mb-0 py-3">نوع بیمه نامه</p>
+               </div>
+               <div class="col-2"> 
+                <p class="mb-0 py-3">تاریخ ثبت</p>
+               </div>
+               <div class="col-2"> 
+                <p class="mb-0 py-3">تاریخ پایان</p>
+               </div>
+               <div class="col-2"> 
+                <p class="mb-0 py-3">وضعیت</p>
+               </div>
+               <div class="col-1"> 
+                <p class="mb-0 py-3">دانلود</p>
+               </div>
+             </div>
+             <div class="mt-4 mt-md-0">
+              <div class="row mx-3 mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
+                <div class="col-md-2 border-b-md-sky"> 
+                 <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه</p>
+                  <p class="mb-0 py-3">125779</p>
+                 </div>
+                </div>
+                <div class="col-md-3 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">نوع بیمه نامه</p>
+                    <p class="mb-0 py-3">بیمه بدنه</p>
+                   </div>
+                 </div>
+                 <div class="col-md-2 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">تاریخ ثبت</p>
+                    <p class="mb-0 py-3">1403/03/22</p>
+                   </div>
+                 </div>
+                 <div class="col-md-2 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">تاریخ پایان</p>
+                    <p class="mb-0 py-3">1403/03/22</p>
+                   </div>
+                 </div>
+                 <div class="col-md-2 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">وضعیت</p>
+                    <p class="mb-0 py-3 text-green">فعال</p>
+                   </div>
+                 </div>
+                 <div class="col-md-1"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">دانلود</p>
+                  <a class="py-3 d-block">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.125 11.4583V11.4583C3.125 12.5077 3.125 13.0324 3.31702 13.4384C3.51486 13.8566 3.8516 14.1934 4.26989 14.3912C4.67588 14.5833 5.20059 14.5833 6.25 14.5833H6.95359C7.58859 14.5833 7.90609 14.5833 8.15305 14.7419C8.18308 14.7612 8.21205 14.7821 8.23985 14.8045C8.46844 14.9886 8.56884 15.2898 8.76965 15.8922L8.91915 16.3407C9.13916 17.0007 9.24916 17.3307 9.51105 17.5195C9.77294 17.7083 10.1208 17.7083 10.8165 17.7083H14.1835C14.8792 17.7083 15.2271 17.7083 15.489 17.5195C15.7508 17.3307 15.8608 17.0007 16.0808 16.3407L16.2304 15.8922C16.4312 15.2898 16.5316 14.9886 16.7602 14.8045C16.7879 14.7821 16.8169 14.7612 16.847 14.7419C17.0939 14.5833 17.4114 14.5833 18.0464 14.5833H18.75C19.7994 14.5833 20.3241 14.5833 20.7301 14.3912C21.1484 14.1934 21.4851 13.8566 21.683 13.4384C21.875 13.0324 21.875 12.5077 21.875 11.4583V11.4583" stroke="#008BF9" stroke-width="2"/>
+                      <path d="M8.33334 9.375L12.5 12.5M12.5 12.5L16.6667 9.375M12.5 12.5L12.5 2.08333" stroke="#008BF9" stroke-width="2"/>
+                      <path d="M16.6667 5.20825H17.875C19.7606 5.20825 20.7034 5.20825 21.2892 5.79404C21.875 6.37982 21.875 7.32263 21.875 9.20825V17.8749C21.875 19.7605 21.875 20.7033 21.2892 21.2891C20.7034 21.8749 19.7606 21.8749 17.875 21.8749H7.125C5.23938 21.8749 4.29657 21.8749 3.71079 21.2891C3.125 20.7033 3.125 19.7605 3.125 17.8749V9.20825C3.125 7.32263 3.125 6.37982 3.71079 5.79404C4.29657 5.20825 5.23938 5.20825 7.125 5.20825H8.33333" stroke="#008BF9" stroke-width="2"/>
+                    </svg>
+                  </a>
+                  </div>
+                 </div>
+               </div>
+               <div class="row mx-3 mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
+                 <div class="col-md-2 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                   <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه</p>
+                   <p class="mb-0 py-3">125779</p>
+                  </div>
+                 </div>
+                 <div class="col-md-3 border-b-md-sky"> 
+                   <div class="d-flex align-items-center justify-content-between">
+                     <p class="mb-0 py-3 text-muted d-md-none">نوع بیمه نامه</p>
+                     <p class="mb-0 py-3">بیمه بدنه</p>
                     </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      نوع بیمه نامه
+                  </div>
+                  <div class="col-md-2 border-b-md-sky"> 
+                   <div class="d-flex align-items-center justify-content-between">
+                     <p class="mb-0 py-3 text-muted d-md-none">تاریخ ثبت</p>
+                     <p class="mb-0 py-3">1403/03/22</p>
                     </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      تاریخ ثبت
+                  </div>
+                  <div class="col-md-2 border-b-md-sky"> 
+                   <div class="d-flex align-items-center justify-content-between">
+                     <p class="mb-0 py-3 text-muted d-md-none">تاریخ پایان</p>
+                     <p class="mb-0 py-3">1403/03/22</p>
                     </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      تاریخ پایان
+                  </div>
+                  <div class="col-md-2 border-b-md-sky"> 
+                   <div class="d-flex align-items-center justify-content-between">
+                     <p class="mb-0 py-3 text-muted d-md-none">وضعیت</p>
+                     <p class="mb-0 py-3 text-green">فعال</p>
                     </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      وضعیت
-                    </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      دانلود
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="py-3">
-                      125779
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ییمه بدنه
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۳/۲۳
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۴/۲۳
-                    </div>
-                  </td>
-                  <td class="text-green">
-                    <div class="py-3">
-                      فعال
-                    </div>
-                  </td>
-                  <td>
-                    <a class="py-2 d-block">
+                  </div>
+                  <div class="col-md-1"> 
+                   <div class="d-flex align-items-center justify-content-between">
+                     <p class="mb-0 py-3 text-muted d-md-none">دانلود</p>
+                   <a class="py-3 d-block">
+                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M3.125 11.4583V11.4583C3.125 12.5077 3.125 13.0324 3.31702 13.4384C3.51486 13.8566 3.8516 14.1934 4.26989 14.3912C4.67588 14.5833 5.20059 14.5833 6.25 14.5833H6.95359C7.58859 14.5833 7.90609 14.5833 8.15305 14.7419C8.18308 14.7612 8.21205 14.7821 8.23985 14.8045C8.46844 14.9886 8.56884 15.2898 8.76965 15.8922L8.91915 16.3407C9.13916 17.0007 9.24916 17.3307 9.51105 17.5195C9.77294 17.7083 10.1208 17.7083 10.8165 17.7083H14.1835C14.8792 17.7083 15.2271 17.7083 15.489 17.5195C15.7508 17.3307 15.8608 17.0007 16.0808 16.3407L16.2304 15.8922C16.4312 15.2898 16.5316 14.9886 16.7602 14.8045C16.7879 14.7821 16.8169 14.7612 16.847 14.7419C17.0939 14.5833 17.4114 14.5833 18.0464 14.5833H18.75C19.7994 14.5833 20.3241 14.5833 20.7301 14.3912C21.1484 14.1934 21.4851 13.8566 21.683 13.4384C21.875 13.0324 21.875 12.5077 21.875 11.4583V11.4583" stroke="#008BF9" stroke-width="2"/>
+                       <path d="M8.33334 9.375L12.5 12.5M12.5 12.5L16.6667 9.375M12.5 12.5L12.5 2.08333" stroke="#008BF9" stroke-width="2"/>
+                       <path d="M16.6667 5.20825H17.875C19.7606 5.20825 20.7034 5.20825 21.2892 5.79404C21.875 6.37982 21.875 7.32263 21.875 9.20825V17.8749C21.875 19.7605 21.875 20.7033 21.2892 21.2891C20.7034 21.8749 19.7606 21.8749 17.875 21.8749H7.125C5.23938 21.8749 4.29657 21.8749 3.71079 21.2891C3.125 20.7033 3.125 19.7605 3.125 17.8749V9.20825C3.125 7.32263 3.125 6.37982 3.71079 5.79404C4.29657 5.20825 5.23938 5.20825 7.125 5.20825H8.33333" stroke="#008BF9" stroke-width="2"/>
+                     </svg>
+                   </a>
+                   </div>
+                  </div>
+                </div>
+                <div class="row mx-3 mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
+                  <div class="col-md-2 border-b-md-sky"> 
+                   <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه</p>
+                    <p class="mb-0 py-3">125779</p>
+                   </div>
+                  </div>
+                  <div class="col-md-3 border-b-md-sky"> 
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0 py-3 text-muted d-md-none">نوع بیمه نامه</p>
+                      <p class="mb-0 py-3">بیمه بدنه</p>
+                     </div>
+                   </div>
+                   <div class="col-md-2 border-b-md-sky"> 
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0 py-3 text-muted d-md-none">تاریخ ثبت</p>
+                      <p class="mb-0 py-3">1403/03/22</p>
+                     </div>
+                   </div>
+                   <div class="col-md-2 border-b-md-sky"> 
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0 py-3 text-muted d-md-none">تاریخ پایان</p>
+                      <p class="mb-0 py-3">1403/03/22</p>
+                     </div>
+                   </div>
+                   <div class="col-md-2 border-b-md-sky"> 
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0 py-3 text-muted d-md-none">وضعیت</p>
+                      <p class="mb-0 py-3 text-green">فعال</p>
+                     </div>
+                   </div>
+                   <div class="col-md-1"> 
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="mb-0 py-3 text-muted d-md-none">دانلود</p>
+                    <a class="py-3 d-block">
                       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.125 11.4583V11.4583C3.125 12.5077 3.125 13.0324 3.31702 13.4384C3.51486 13.8566 3.8516 14.1934 4.26989 14.3912C4.67588 14.5833 5.20059 14.5833 6.25 14.5833H6.95359C7.58859 14.5833 7.90609 14.5833 8.15305 14.7419C8.18308 14.7612 8.21205 14.7821 8.23985 14.8045C8.46844 14.9886 8.56884 15.2898 8.76965 15.8922L8.91915 16.3407C9.13916 17.0007 9.24916 17.3307 9.51105 17.5195C9.77294 17.7083 10.1208 17.7083 10.8165 17.7083H14.1835C14.8792 17.7083 15.2271 17.7083 15.489 17.5195C15.7508 17.3307 15.8608 17.0007 16.0808 16.3407L16.2304 15.8922C16.4312 15.2898 16.5316 14.9886 16.7602 14.8045C16.7879 14.7821 16.8169 14.7612 16.847 14.7419C17.0939 14.5833 17.4114 14.5833 18.0464 14.5833H18.75C19.7994 14.5833 20.3241 14.5833 20.7301 14.3912C21.1484 14.1934 21.4851 13.8566 21.683 13.4384C21.875 13.0324 21.875 12.5077 21.875 11.4583V11.4583" stroke="#008BF9" stroke-width="2"/>
                         <path d="M8.33334 9.375L12.5 12.5M12.5 12.5L16.6667 9.375M12.5 12.5L12.5 2.08333" stroke="#008BF9" stroke-width="2"/>
                         <path d="M16.6667 5.20825H17.875C19.7606 5.20825 20.7034 5.20825 21.2892 5.79404C21.875 6.37982 21.875 7.32263 21.875 9.20825V17.8749C21.875 19.7605 21.875 20.7033 21.2892 21.2891C20.7034 21.8749 19.7606 21.8749 17.875 21.8749H7.125C5.23938 21.8749 4.29657 21.8749 3.71079 21.2891C3.125 20.7033 3.125 19.7605 3.125 17.8749V9.20825C3.125 7.32263 3.125 6.37982 3.71079 5.79404C4.29657 5.20825 5.23938 5.20825 7.125 5.20825H8.33333" stroke="#008BF9" stroke-width="2"/>
                       </svg>
                     </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="py-3">
-                      125779
                     </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ییمه بدنه
+                   </div>
+                 </div>
+                 <div class="row mx-3 mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
+                   <div class="col-md-2 border-b-md-sky"> 
+                    <div class="d-flex align-items-center justify-content-between">
+                     <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه</p>
+                     <p class="mb-0 py-3">125779</p>
                     </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۳/۲۳
+                   </div>
+                   <div class="col-md-3 border-b-md-sky"> 
+                     <div class="d-flex align-items-center justify-content-between">
+                       <p class="mb-0 py-3 text-muted d-md-none">نوع بیمه نامه</p>
+                       <p class="mb-0 py-3">بیمه بدنه</p>
+                      </div>
                     </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۴/۲۳
+                    <div class="col-md-2 border-b-md-sky"> 
+                     <div class="d-flex align-items-center justify-content-between">
+                       <p class="mb-0 py-3 text-muted d-md-none">تاریخ ثبت</p>
+                       <p class="mb-0 py-3">1403/03/22</p>
+                      </div>
                     </div>
-                  </td>
-                  <td class="text-green">
-                    <div class="py-3">
-                      فعال
+                    <div class="col-md-2 border-b-md-sky"> 
+                     <div class="d-flex align-items-center justify-content-between">
+                       <p class="mb-0 py-3 text-muted d-md-none">تاریخ پایان</p>
+                       <p class="mb-0 py-3">1403/03/22</p>
+                      </div>
                     </div>
-                  </td>
-                  <td>
-                    <a class="py-2 d-block">
-                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.125 11.4583V11.4583C3.125 12.5077 3.125 13.0324 3.31702 13.4384C3.51486 13.8566 3.8516 14.1934 4.26989 14.3912C4.67588 14.5833 5.20059 14.5833 6.25 14.5833H6.95359C7.58859 14.5833 7.90609 14.5833 8.15305 14.7419C8.18308 14.7612 8.21205 14.7821 8.23985 14.8045C8.46844 14.9886 8.56884 15.2898 8.76965 15.8922L8.91915 16.3407C9.13916 17.0007 9.24916 17.3307 9.51105 17.5195C9.77294 17.7083 10.1208 17.7083 10.8165 17.7083H14.1835C14.8792 17.7083 15.2271 17.7083 15.489 17.5195C15.7508 17.3307 15.8608 17.0007 16.0808 16.3407L16.2304 15.8922C16.4312 15.2898 16.5316 14.9886 16.7602 14.8045C16.7879 14.7821 16.8169 14.7612 16.847 14.7419C17.0939 14.5833 17.4114 14.5833 18.0464 14.5833H18.75C19.7994 14.5833 20.3241 14.5833 20.7301 14.3912C21.1484 14.1934 21.4851 13.8566 21.683 13.4384C21.875 13.0324 21.875 12.5077 21.875 11.4583V11.4583" stroke="#008BF9" stroke-width="2"/>
-                        <path d="M8.33334 9.375L12.5 12.5M12.5 12.5L16.6667 9.375M12.5 12.5L12.5 2.08333" stroke="#008BF9" stroke-width="2"/>
-                        <path d="M16.6667 5.20825H17.875C19.7606 5.20825 20.7034 5.20825 21.2892 5.79404C21.875 6.37982 21.875 7.32263 21.875 9.20825V17.8749C21.875 19.7605 21.875 20.7033 21.2892 21.2891C20.7034 21.8749 19.7606 21.8749 17.875 21.8749H7.125C5.23938 21.8749 4.29657 21.8749 3.71079 21.2891C3.125 20.7033 3.125 19.7605 3.125 17.8749V9.20825C3.125 7.32263 3.125 6.37982 3.71079 5.79404C4.29657 5.20825 5.23938 5.20825 7.125 5.20825H8.33333" stroke="#008BF9" stroke-width="2"/>
-                      </svg>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="py-3">
-                      125779
+                    <div class="col-md-2 border-b-md-sky"> 
+                     <div class="d-flex align-items-center justify-content-between">
+                       <p class="mb-0 py-3 text-muted d-md-none">وضعیت</p>
+                       <p class="mb-0 py-3 text-green">فعال</p>
+                      </div>
                     </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ییمه بدنه
+                    <div class="col-md-1"> 
+                     <div class="d-flex align-items-center justify-content-between">
+                       <p class="mb-0 py-3 text-muted d-md-none">دانلود</p>
+                     <a class="py-3 d-block">
+                       <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M3.125 11.4583V11.4583C3.125 12.5077 3.125 13.0324 3.31702 13.4384C3.51486 13.8566 3.8516 14.1934 4.26989 14.3912C4.67588 14.5833 5.20059 14.5833 6.25 14.5833H6.95359C7.58859 14.5833 7.90609 14.5833 8.15305 14.7419C8.18308 14.7612 8.21205 14.7821 8.23985 14.8045C8.46844 14.9886 8.56884 15.2898 8.76965 15.8922L8.91915 16.3407C9.13916 17.0007 9.24916 17.3307 9.51105 17.5195C9.77294 17.7083 10.1208 17.7083 10.8165 17.7083H14.1835C14.8792 17.7083 15.2271 17.7083 15.489 17.5195C15.7508 17.3307 15.8608 17.0007 16.0808 16.3407L16.2304 15.8922C16.4312 15.2898 16.5316 14.9886 16.7602 14.8045C16.7879 14.7821 16.8169 14.7612 16.847 14.7419C17.0939 14.5833 17.4114 14.5833 18.0464 14.5833H18.75C19.7994 14.5833 20.3241 14.5833 20.7301 14.3912C21.1484 14.1934 21.4851 13.8566 21.683 13.4384C21.875 13.0324 21.875 12.5077 21.875 11.4583V11.4583" stroke="#008BF9" stroke-width="2"/>
+                         <path d="M8.33334 9.375L12.5 12.5M12.5 12.5L16.6667 9.375M12.5 12.5L12.5 2.08333" stroke="#008BF9" stroke-width="2"/>
+                         <path d="M16.6667 5.20825H17.875C19.7606 5.20825 20.7034 5.20825 21.2892 5.79404C21.875 6.37982 21.875 7.32263 21.875 9.20825V17.8749C21.875 19.7605 21.875 20.7033 21.2892 21.2891C20.7034 21.8749 19.7606 21.8749 17.875 21.8749H7.125C5.23938 21.8749 4.29657 21.8749 3.71079 21.2891C3.125 20.7033 3.125 19.7605 3.125 17.8749V9.20825C3.125 7.32263 3.125 6.37982 3.71079 5.79404C4.29657 5.20825 5.23938 5.20825 7.125 5.20825H8.33333" stroke="#008BF9" stroke-width="2"/>
+                       </svg>
+                     </a>
+                     </div>
                     </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۳/۲۳
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۴/۲۳
-                    </div>
-                  </td>
-                  <td class="text-green">
-                    <div class="py-3">
-                      فعال
-                    </div>
-                  </td>
-                  <td>
-                    <a class="py-2 d-block">
-                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.125 11.4583V11.4583C3.125 12.5077 3.125 13.0324 3.31702 13.4384C3.51486 13.8566 3.8516 14.1934 4.26989 14.3912C4.67588 14.5833 5.20059 14.5833 6.25 14.5833H6.95359C7.58859 14.5833 7.90609 14.5833 8.15305 14.7419C8.18308 14.7612 8.21205 14.7821 8.23985 14.8045C8.46844 14.9886 8.56884 15.2898 8.76965 15.8922L8.91915 16.3407C9.13916 17.0007 9.24916 17.3307 9.51105 17.5195C9.77294 17.7083 10.1208 17.7083 10.8165 17.7083H14.1835C14.8792 17.7083 15.2271 17.7083 15.489 17.5195C15.7508 17.3307 15.8608 17.0007 16.0808 16.3407L16.2304 15.8922C16.4312 15.2898 16.5316 14.9886 16.7602 14.8045C16.7879 14.7821 16.8169 14.7612 16.847 14.7419C17.0939 14.5833 17.4114 14.5833 18.0464 14.5833H18.75C19.7994 14.5833 20.3241 14.5833 20.7301 14.3912C21.1484 14.1934 21.4851 13.8566 21.683 13.4384C21.875 13.0324 21.875 12.5077 21.875 11.4583V11.4583" stroke="#008BF9" stroke-width="2"/>
-                        <path d="M8.33334 9.375L12.5 12.5M12.5 12.5L16.6667 9.375M12.5 12.5L12.5 2.08333" stroke="#008BF9" stroke-width="2"/>
-                        <path d="M16.6667 5.20825H17.875C19.7606 5.20825 20.7034 5.20825 21.2892 5.79404C21.875 6.37982 21.875 7.32263 21.875 9.20825V17.8749C21.875 19.7605 21.875 20.7033 21.2892 21.2891C20.7034 21.8749 19.7606 21.8749 17.875 21.8749H7.125C5.23938 21.8749 4.29657 21.8749 3.71079 21.2891C3.125 20.7033 3.125 19.7605 3.125 17.8749V9.20825C3.125 7.32263 3.125 6.37982 3.71079 5.79404C4.29657 5.20825 5.23938 5.20825 7.125 5.20825H8.33333" stroke="#008BF9" stroke-width="2"/>
-                      </svg>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>            
-             </table>
+                  </div>
+             </div>
            </div>
           </div>
         </div>
