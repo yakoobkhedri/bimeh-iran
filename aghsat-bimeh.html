@@ -299,8 +299,8 @@
    <section class="mt-4 mb-5 pb-5">
     <div class="container">
       <div class="row mx-0 g-4">
-        <div class="col-xl-3 col-lg-4">
-          <div class="rounded-15 p-4 bg-main">
+        <div class="col-xl-3 col-lg-4 order-last order-lg-first">
+          <div class="rounded-15 p-4 bg-main d-none d-lg-block">
             <img alt="img" src="assets/img/Mask group.png" class="d-block mx-auto w-113 h-113">
             <div class="d-flex align-items-center justify-content-between mt-2 gap-2">
              <div>
@@ -323,7 +323,7 @@
              </div>
             </div>
           </div>
-          <div class="rounded-20 mt-4 p-4 shadow2 border overflow-hidden">
+          <div class="rounded-20 rounded-lg-0 mt-4 p-4 shadow2 shadow-lg-none border-t-lg-main border border-lg-0 overflow-hidden">
            <ul class="list-unstyled fs-14 mb-0 pe-0 sidebar">
             <li class="rounded-10 py-2 px-4 mb-3 position-relative">
               <svg class="position-absolute top-0 bottom-0 h-100" width="7" height="46" viewBox="0 0 7 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -394,7 +394,7 @@
            </ul>
           </div>
         </div>
-        <div class="col-xl-9 col-lg-8">
+        <div class="col-xl-9 col-lg-8 order-first order-lg-last">
           <form class="d-flex align-items-center justify-content-end gap-3 flex-column flex-sm-row">
            <div class="d-flex align-items-center gap-2 border border-secondary h-43 w-180 w-sm-100 rounded-10 px-3">
              <input data-jdp="" class="outline-none border flex-grow-1 w-100 border-0 fs-14" placeholder="تاریخ سر رسید">
@@ -415,14 +415,14 @@
               <p class="mb-0 text-white fs-18 font-bold">جستجو</p>
             </button>
           </form>
-          <div class="rounded-15 border shadow3 p-4 mt-4">
-           <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3 border-bottom">
+          <div class="rounded-15 border shadow3 py-4 mt-4 shadow-lg-none border-lg-0">
+           <div class="d-flex align-items-center justify-content-between gap-3 border-bottom mx-3">
             <div class="d-flex align-items-center gap-2 border-b-main-3 pb-2">
-              <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="w-sm-24" width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 12L17.6384 15.9035C18.178 16.2771 18.5 16.8916 18.5 17.5479V20C18.5 20.2761 18.2761 20.5 18 20.5H6C5.72386 20.5 5.5 20.2761 5.5 20V17.5479C5.5 16.8916 5.82198 16.2771 6.36158 15.9035L12 12ZM12 12L17.6384 8.09648C18.178 7.72291 18.5 7.10838 18.5 6.45209V4C18.5 3.72386 18.2761 3.5 18 3.5H6C5.72386 3.5 5.5 3.72386 5.5 4V6.45209C5.5 7.10838 5.82198 7.72291 6.36158 8.09648L12 12Z" stroke="#008BF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15.5 20.5V19.3705C15.5 18.8322 15.2116 18.3352 14.7442 18.0681L12.0744 16.5425C12.0283 16.5162 11.9717 16.5162 11.9256 16.5425L9.25579 18.0681C8.78843 18.3352 8.5 18.8322 8.5 19.3705V20.5" stroke="#008BF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <p class="mb-1 fs-20 fw-bold text-main">قسط های من</p>
+              <p class="mb-1 fs-20 fs-sm-14 fw-bold text-main">قسط های من</p>
             </div>
             <a class="position-relative -top-8 bg-main rounded-15 w-123 py-2 text-white d-flex align-items-center justify-content-center gap-2 fs-14 font-bold">
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -436,89 +436,93 @@
               <p class="mb-0">ویرایش</p>
             </a>
            </div>
-           <div class="table-responsive border rounded-15 mt-4 text-center">
-             <table class="table table-hover fs-12">
-              <thead>
-                <tr>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      ردیف
-                    </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      شماره بیمه نامه
-                    </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      تاریخ سررسید
-                    </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="py-3">
-                      1
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۲۳۵۸۶۹۵۸۹۴
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۳/۲۳
-                    </div>
-                  </td>
-                  <td>
-                    <div class="p-3 d-flex align-items-center justify-content-end gap-3">
+           <div class="table-responsive fs-12">
+            <div class="text-muted row d-none d-md-flex mx-3 font-bold border-bottom "> 
+             <div class="col-1"> 
+              <p class="mb-0 py-3">ردیف</p>
+             </div>
+             <div class="col-3"> 
+               <p class="mb-0 py-3">شماره بیمه نامه</p>
+              </div>
+              <div class="col-3"> 
+               <p class="mb-0 py-3">تاریخ سررسید</p>
+              </div>
+              <div class="col-5"> 
+               <p class="mb-0 py-3"></p>
+              </div>
+            </div>
+            <div class="mt-4 mt-md-0">
+             <div class="row mx-3 mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
+               <div class="col-md-1 border-b-md-sky"> 
+                <div class="d-flex align-items-center justify-content-between">
+                 <p class="mb-0 py-3 text-muted d-md-none">ردیف:</p>
+                 <p class="mb-0 py-3">1</p>
+                </div>
+               </div>
+               <div class="col-md-3 border-b-md-sky"> 
+                 <div class="d-flex align-items-center justify-content-between">
+                   <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه:</p>
+                   <p class="mb-0 py-3">3568534</p>
+                  </div>
+                </div>
+                <div class="col-md-3 border-b-md-sky"> 
+                 <div class="d-flex align-items-center justify-content-between">
+                   <p class="mb-0 py-3 text-muted d-md-none">تاریخ سررسید:</p>
+                   <p class="mb-0 py-3">1403/03/22</p>
+                  </div>
+                </div>
+                <div class="col-md-5 border-b-md-sky"> 
+                 <div class="d-flex align-items-center justify-content-end">
+                   <p class="mb-0 py-3 text-muted d-md-none"></p>
+                   <p class="mb-0 py-3">
+                    <div class="py-3 d-flex align-items-center justify-content-end gap-3">
                       <a class="border-main text-main fs-12 rounded-10 d-flex align-items-center justify-content-center w-104 h-31">جزئیات قسط</a>
                       <a class="text-white bg-main fs-12 rounded-10 d-flex align-items-center justify-content-center gap-2 w-104 h-31">
                         <p class="mb-0">پرداخت</p>
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect x="3.5" y="6.5" width="18" height="13" rx="2" stroke="white" stroke-width="1.5"/>
-                          <path d="M7.5 15.5H7.51" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                          <path d="M4.5 11.5H21.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                          <rect x="3.5" y="6.5" width="18" height="13" rx="2" stroke="white" stroke-width="1.5"></rect>
+                          <path d="M7.5 15.5H7.51" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                          <path d="M4.5 11.5H21.5" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
                         </svg>
                       </a>
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="py-3">
-                      1
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۲۳۵۸۶۹۵۸۹۴
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۳/۲۳
-                    </div>
-                  </td>
-                  <td>
-                    <div class="p-3 d-flex align-items-center justify-content-end gap-3">
-                      <a class="border-main text-main fs-12 rounded-10 d-flex align-items-center justify-content-center w-104 h-31">جزئیات قسط</a>
-                      <p class="mb-0 rounded-10 text-green font-bold w-104 h-31 bg-green border-green d-flex align-items-center justify-content-center">پرداخت شده</p>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>            
-             </table>
-           </div>
+                   </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row mx-3 mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
+                <div class="col-md-1 border-b-md-sky"> 
+                 <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0 py-3 text-muted d-md-none">ردیف:</p>
+                  <p class="mb-0 py-3">2</p>
+                 </div>
+                </div>
+                <div class="col-md-3 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه:</p>
+                    <p class="mb-0 py-3">3568534</p>
+                   </div>
+                 </div>
+                 <div class="col-md-3 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">تاریخ سررسید:</p>
+                    <p class="mb-0 py-3">1403/03/22</p>
+                   </div>
+                 </div>
+                 <div class="col-md-5 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-end">
+                    <p class="mb-0 py-3 text-muted d-md-none"></p>
+                    <p class="mb-0 py-3">
+                     <div class="py-3 d-flex align-items-center justify-content-end gap-3">
+                       <a class="border-main text-main fs-12 rounded-10 d-flex align-items-center justify-content-center w-104 h-31">جزئیات قسط</a>
+                       <p class="mb-0 rounded-10 text-green font-bold w-104 h-31 bg-green border-green d-flex align-items-center justify-content-center">پرداخت شده</p>
+                     </div>
+                    </p>
+                   </div>
+                 </div>
+               </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
