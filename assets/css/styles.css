@@ -303,6 +303,9 @@ a {
 .w-88 {
     width: 88%;
 }
+.w-90 {
+    width: 90px;
+}
 .w-91 {
     width: 91px;
 }
@@ -682,6 +685,9 @@ header .showHover:hover .dropdown{
     .w-md-103{
         width: 103px;
     }
+    .w-md-100{
+        width: 100%;
+    }
     .w-md-33{
         width: 33px;
     }
@@ -738,6 +744,9 @@ header .showHover:hover .dropdown{
     }
     .w-sm-24{
         width: 24px;
+    }
+    .w-sm-21{
+        width: 21px;
     }
     .h-sm-136{
         height: 136px;
