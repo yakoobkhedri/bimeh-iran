@@ -395,8 +395,8 @@
           </div>
         </div>
         <div class="col-xl-9 col-lg-8 order-first order-lg-last">
-          <form>
-            <div class="d-flex flex-column flex-sm-row align-items-center gap-3 flex-column flex-sm-row">
+          <form class="d-flex flex-column gap-3">
+            <div class="d-flex order-last order-sm-first flex-column flex-sm-row align-items-center gap-3 flex-column flex-sm-row">
               <select class="h-43 w-sm-100 flex-grow-1 border rounded-10 bg-white px-3 fs-14 text-secondary font-bold">
                 <option>موضوع</option>
                 <option>موضوع</option>
@@ -422,102 +422,77 @@
               <p class="mb-1 fs-20 fs-sm-14 fw-bold text-main">تیکت های من</p>
             </div>
            </div>
-           <div class="table-responsive">
-             <table class="table table-hover fs-12">
-              <thead>
-                <tr>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      موضوع
+           <div class="table-responsive fs-12">
+            <div class="text-muted row d-none d-md-flex mx-3 font-bold border-bottom "> 
+             <div class="col-3"> 
+              <p class="mb-0 py-3">موضوع</p>
+             </div>
+             <div class="col-3"> 
+               <p class="mb-0 py-3">توضیحات</p>
+              </div>
+              <div class="col-3"> 
+               <p class="mb-0 py-3">تاریخ</p>
+              </div>
+              <div class="col-3"> 
+               <p class="mb-0 py-3">وضعیت</p>
+              </div>
+            </div>
+            <div class="mt-4 mt-md-0">
+             <div class="row mx-3 overflow-hidden mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
+               <div class="col-md-3 border-b-md-sky"> 
+                <div class="d-flex align-items-center justify-content-between">
+                 <p class="mb-0 py-3 text-muted d-md-none">موضوع:</p>
+                 <p class="mb-0 py-3">3568534</p>
+                </div>
+               </div>
+               <div class="col-md-3 border-b-md-sky"> 
+                 <div class="d-flex align-items-center justify-content-between">
+                   <p class="mb-0 py-3 text-muted d-md-none">توضیحات:</p>
+                   <p class="mb-0 py-3">بیمه بدنه</p>
+                  </div>
+                </div>
+                <div class="col-md-3 border-b-md-sky"> 
+                 <div class="d-flex align-items-center justify-content-between">
+                   <p class="mb-0 py-3 text-muted d-md-none">تاریخ:</p>
+                   <p class="mb-0 py-3">1403/03/22</p>
+                  </div>
+                </div>
+                <div class="col-md-3 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">وضعیت:</p>
+                    <p class="mb-0 py-3 text-green">پاسخ داده</p>
+                   </div>
+                 </div>
+              </div>
+              <div class="row mx-3 overflow-hidden mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
+                <div class="col-md-3 border-b-md-sky"> 
+                 <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0 py-3 text-muted d-md-none">موضوع:</p>
+                  <p class="mb-0 py-3">3568534</p>
+                 </div>
+                </div>
+                <div class="col-md-3 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">توضیحات:</p>
+                    <p class="mb-0 py-3">بیمه بدنه</p>
+                   </div>
+                 </div>
+                 <div class="col-md-3 border-b-md-sky"> 
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 py-3 text-muted d-md-none">تاریخ:</p>
+                    <p class="mb-0 py-3">1403/03/22</p>
+                   </div>
+                 </div>
+                 <div class="col-md-3 border-b-md-sky"> 
+                   <div class="d-flex align-items-center justify-content-between">
+                     <p class="mb-0 py-3 text-muted d-md-none">وضعیت:</p>
+                     <p class="mb-0 py-3 text-green">پاسخ داده</p>
                     </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      توضیحات
-                    </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                      تاریخ
-                    </div>
-                  </th>
-                  <th class="text-muted" scope="col">
-                    <div class="py-2">
-                     وضعیت
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="py-3">
-                      125779
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ییمه بدنه
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۳/۲۳
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      پاسخ داده
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="py-3">
-                      125779
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ییمه بدنه
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۳/۲۳
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      پاسخ داده
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="py-3">
-                      125779
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ییمه بدنه
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      ۱۴۰۳/۰۳/۲۳
-                    </div>
-                  </td>
-                  <td>
-                    <div class="py-3">
-                      پاسخ داده
-                    </div>
-                  </td>
-                </tr>
-              </tbody>            
-             </table>
-           </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
