@@ -13,6 +13,58 @@
 
 <body>
 
+  <!-- search modal -->
+  <div class="modal fade show" id="search" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered max-w-997">
+      <div class="modal-content rounded-20 border-main-2">
+        <div class="modal-body p-0">
+          <form>
+            <div class="d-flex rounded-20 border shadow-sm align-items-center px-4 h-70 justify-content-between gap-2">
+              <input placeholder="بیمه خود را جستجو کنید" type="search"
+                class="flex-grow-1 bg-transparent border-0 outline-none py-2 fs-14 font-bold">
+              <svg class="cursor-pointer" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" transform="translate(0.5)" fill="white" />
+                <path
+                  d="M21.5 20.9998L18.0967 17.5961M17.5035 4.99976C16.0216 3.75172 14.1082 2.99976 12.0192 2.99976C7.3142 2.99976 3.5 6.81439 3.5 11.52C3.5 16.2256 7.3142 20.0402 12.0192 20.0402C16.7243 20.0402 20.5385 16.2256 20.5385 11.52C20.5385 10.3377 20.2977 9.21169 19.8625 8.18827"
+                  stroke="#008BF9" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom rounded-t-25 shadow4 h-auto border-0" tabindex="-1" id="offcanvasBottom3"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-body p-4 pt-5">
+      <a data-bs-dismiss="offcanvas" aria-label="Close"
+        class="d-flex align-items-center justify-content-end text-main gap-2 mb-5">
+        <p class="mb-0 fs-14 font-bold text-main">بازگشت</p>
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2 7L1.29289 6.29289L0.585786 7L1.29289 7.70711L2 7ZM17 8C17.5523 8 18 7.55228 18 7C18 6.44772 17.5523 6 17 6V8ZM7.29289 0.292893L1.29289 6.29289L2.70711 7.70711L8.70711 1.70711L7.29289 0.292893ZM1.29289 7.70711L7.29289 13.7071L8.70711 12.2929L2.70711 6.29289L1.29289 7.70711ZM2 8H17V6H2V8Z"
+            fill="#008BF9" />
+        </svg>
+      </a>
+      <form class="mb-5 pb-5">
+        <div
+          class="d-flex mb-5 rounded-20 border-main shadow-sm align-items-center px-4 h-70 justify-content-between gap-2">
+          <input placeholder="بیمه خود را جستجو کنید" type="search"
+            class="flex-grow-1 bg-transparent border-0 outline-none py-2 fs-14 font-bold">
+          <svg class="cursor-pointer" width="25" height="24" viewBox="0 0 25 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" transform="translate(0.5)" fill="white"></rect>
+            <path
+              d="M21.5 20.9998L18.0967 17.5961M17.5035 4.99976C16.0216 3.75172 14.1082 2.99976 12.0192 2.99976C7.3142 2.99976 3.5 6.81439 3.5 11.52C3.5 16.2256 7.3142 20.0402 12.0192 20.0402C16.7243 20.0402 20.5385 16.2256 20.5385 11.52C20.5385 10.3377 20.2977 9.21169 19.8625 8.18827"
+              stroke="#008BF9" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- header -->
 
   <header>
@@ -141,13 +193,24 @@
         <a class="d-block d-lg-none">
           <img alt="logo" src="assets/img/Frame 337.png" class="img-fluid w-66">
         </a>
-        <a class="d-lg-none d-block">
-          <svg width="26" height="26" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M3.65387 1.82849C3.40343 1.50649 2.92745 1.47686 2.639 1.76531L1.60508 2.79923C1.1216 3.28271 0.94387 3.96766 1.1551 4.56847C2.00338 6.98124 3.39215 9.24671 5.32272 11.1773C7.25329 13.1078 9.51876 14.4966 11.9315 15.3449C12.5323 15.5561 13.2173 15.3784 13.7008 14.8949L14.7347 13.861C15.0231 13.5726 14.9935 13.0966 14.6715 12.8461L12.3653 11.0524C12.2008 10.9245 11.9866 10.8793 11.7845 10.9298L9.59541 11.4771C9.00082 11.6257 8.37183 11.4515 7.93845 11.0181L5.48187 8.56155C5.04849 8.12817 4.87427 7.49919 5.02292 6.90459L5.57019 4.71553C5.62073 4.51336 5.57552 4.29918 5.44758 4.13468L3.65387 1.82849ZM1.88477 1.01108C2.62689 0.268961 3.8515 0.345203 4.49583 1.17363L6.28954 3.47983C6.6187 3.90304 6.73502 4.45409 6.60498 4.97423L6.05772 7.16329C5.99994 7.3944 6.06766 7.63888 6.2361 7.80732L8.69268 10.2639C8.86113 10.4323 9.1056 10.5001 9.33671 10.4423L11.5258 9.89502C12.0459 9.76499 12.597 9.8813 13.0202 10.2105L15.3264 12.0042C16.1548 12.6485 16.231 13.8731 15.4889 14.6152L14.455 15.6492C13.7153 16.3889 12.6089 16.7137 11.5778 16.3512C9.01754 15.4511 6.61438 13.9774 4.56849 11.9315C2.5226 9.88562 1.04895 7.48246 0.148838 4.92225C-0.213682 3.89112 0.11113 2.78472 0.85085 2.045L1.88477 1.01108Z"
-              fill="#008BF9" />
-          </svg>
-        </a>
+        <div class="d-flex d-lg-none gap-3">
+          <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom3" aria-controls="offcanvasBottom"
+            class="cursor-pointer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" fill="white" />
+              <path
+                d="M21.0001 20.9997L17.5968 17.596M17.0036 4.99969C15.5217 3.75166 13.6084 2.99969 11.5194 2.99969C6.81432 2.99969 3.00012 6.81433 3.00012 11.5199C3.00012 16.2255 6.81432 20.0402 11.5194 20.0402C16.2244 20.0402 20.0386 16.2255 20.0386 11.5199C20.0386 10.3377 19.7978 9.21163 19.3627 8.18821"
+                stroke="#0C356A" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <a>
+            <svg width="26" height="26" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.65387 1.82849C3.40343 1.50649 2.92745 1.47686 2.639 1.76531L1.60508 2.79923C1.1216 3.28271 0.94387 3.96766 1.1551 4.56847C2.00338 6.98124 3.39215 9.24671 5.32272 11.1773C7.25329 13.1078 9.51876 14.4966 11.9315 15.3449C12.5323 15.5561 13.2173 15.3784 13.7008 14.8949L14.7347 13.861C15.0231 13.5726 14.9935 13.0966 14.6715 12.8461L12.3653 11.0524C12.2008 10.9245 11.9866 10.8793 11.7845 10.9298L9.59541 11.4771C9.00082 11.6257 8.37183 11.4515 7.93845 11.0181L5.48187 8.56155C5.04849 8.12817 4.87427 7.49919 5.02292 6.90459L5.57019 4.71553C5.62073 4.51336 5.57552 4.29918 5.44758 4.13468L3.65387 1.82849ZM1.88477 1.01108C2.62689 0.268961 3.8515 0.345203 4.49583 1.17363L6.28954 3.47983C6.6187 3.90304 6.73502 4.45409 6.60498 4.97423L6.05772 7.16329C5.99994 7.3944 6.06766 7.63888 6.2361 7.80732L8.69268 10.2639C8.86113 10.4323 9.1056 10.5001 9.33671 10.4423L11.5258 9.89502C12.0459 9.76499 12.597 9.8813 13.0202 10.2105L15.3264 12.0042C16.1548 12.6485 16.231 13.8731 15.4889 14.6152L14.455 15.6492C13.7153 16.3889 12.6089 16.7137 11.5778 16.3512C9.01754 15.4511 6.61438 13.9774 4.56849 11.9315C2.5226 9.88562 1.04895 7.48246 0.148838 4.92225C-0.213682 3.89112 0.11113 2.78472 0.85085 2.045L1.88477 1.01108Z"
+                fill="#008BF9" />
+            </svg>
+          </a>
+        </div>
         <div class="d-none d-lg-flex align-items-center gap-3 gap-xl-5">
           <div class="w-200 flex-shrink-0">
             <a class="w-100 d-block"><img alt="logo" src="assets/img/Frame 338.png" class="img-fluid w-100 d-block"></a>
@@ -283,7 +346,7 @@
           </ul>
         </div>
         <div class="d-none d-lg-flex align-items-center gap-xxl-5 gap-3">
-          <div class="cursor-pointer">
+          <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#search">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="24" height="24" fill="white" />
               <path
@@ -449,7 +512,8 @@
             <form class="d-flex align-items-center gap-3 flex-column flex-sm-row">
               <input class="rounded-10 border border-secondary fs-14 fw-bold h-43 w-180 w-md-100 outline-none px-3"
                 placeholder="شماره بیمه نامه">
-              <div class="d-md-flex d-none align-items-center gap-2 border border-secondary h-43 w-180 w-sm-100 rounded-10 px-3">
+              <div
+                class="d-md-flex d-none align-items-center gap-2 border border-secondary h-43 w-180 w-sm-100 rounded-10 px-3">
                 <input data-jdp="" class="outline-none border flex-grow-1 w-100 border-0 fs-14"
                   placeholder="تاریخ سر رسید">
                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -574,142 +638,166 @@
                 </div>
               </div>
               <div class="table-responsive fs-12">
-                <div class="text-muted row d-none d-md-flex mx-3 font-bold border-bottom "> 
-                 <div class="col-2"> 
-                  <p class="mb-0 py-3">شماره بیمه نامه</p>
-                 </div>
-                 <div class="col-2"> 
-                   <p class="mb-0 py-3">نوع بیمه نامه</p>
+                <div class="text-muted row d-none d-md-flex mx-3 font-bold border-bottom ">
+                  <div class="col-2">
+                    <p class="mb-0 py-3">شماره بیمه نامه</p>
                   </div>
-                  <div class="col-2"> 
-                   <p class="mb-0 py-3">تاریخ ثبت</p>
+                  <div class="col-2">
+                    <p class="mb-0 py-3">نوع بیمه نامه</p>
                   </div>
-                  <div class="col-2"> 
-                   <p class="mb-0 py-3">تاریخ پایان</p>
+                  <div class="col-2">
+                    <p class="mb-0 py-3">تاریخ ثبت</p>
                   </div>
-                  <div class="col-1"> 
-                   <p class="mb-0 py-3">تعداد اقساط</p>
+                  <div class="col-2">
+                    <p class="mb-0 py-3">تاریخ پایان</p>
                   </div>
-                  <div class="col-1"> 
+                  <div class="col-1">
+                    <p class="mb-0 py-3">تعداد اقساط</p>
+                  </div>
+                  <div class="col-1">
                     <p class="mb-0 py-3">نحوه کار</p>
-                   </div>
-                  <div class="col-2"> 
-                   <p class="mb-0 py-3">وضعیت</p>
+                  </div>
+                  <div class="col-2">
+                    <p class="mb-0 py-3">وضعیت</p>
                   </div>
                 </div>
                 <div class="mt-4 mt-md-0">
-                 <div class="row mx-3 overflow-hidden mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
-                   <div class="col-md-2 border-b-md-sky"> 
-                    <div class="d-flex align-items-center justify-content-between">
-                     <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه:</p>
-                     <p class="mb-0 py-3">3568534</p>
-                    </div>
-                   </div>
-                   <div class="col-md-2 border-b-md-sky"> 
-                     <div class="d-flex align-items-center justify-content-between">
-                       <p class="mb-0 py-3 text-muted d-md-none">نوع بیمه نامه:</p>
-                       <p class="mb-0 py-3">بیمه بدنه</p>
+                  <div
+                    class="row mx-3 overflow-hidden mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0">
+                    <div class="col-md-2 border-b-md-sky">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه:</p>
+                        <p class="mb-0 py-3">3568534</p>
                       </div>
                     </div>
-                    <div class="col-md-2 border-b-md-sky"> 
-                     <div class="d-flex align-items-center justify-content-between">
-                       <p class="mb-0 py-3 text-muted d-md-none">تاریخ ثبت:</p>
-                       <p class="mb-0 py-3">1403/03/22</p>
+                    <div class="col-md-2 border-b-md-sky">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 py-3 text-muted d-md-none">نوع بیمه نامه:</p>
+                        <p class="mb-0 py-3">بیمه بدنه</p>
                       </div>
                     </div>
-                    <div class="col-md-2 border-b-md-sky"> 
+                    <div class="col-md-2 border-b-md-sky">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 py-3 text-muted d-md-none">تاریخ ثبت:</p>
+                        <p class="mb-0 py-3">1403/03/22</p>
+                      </div>
+                    </div>
+                    <div class="col-md-2 border-b-md-sky">
                       <div class="d-flex align-items-center justify-content-between">
                         <p class="mb-0 py-3 text-muted d-md-none">تاریخ پایان:</p>
                         <p class="mb-0 py-3">1403/03/22</p>
-                       </div>
-                     </div>
-                     <div class="col-md-1 border-b-md-sky"> 
+                      </div>
+                    </div>
+                    <div class="col-md-1 border-b-md-sky">
                       <div class="d-flex align-items-center justify-content-between">
                         <p class="mb-0 py-3 text-muted d-md-none">تعداد اقساط:</p>
                         <p class="mb-0 py-3">36</p>
-                       </div>
-                     </div>
-                     <div class="col-md-1 border-b-md-sky"> 
+                      </div>
+                    </div>
+                    <div class="col-md-1 border-b-md-sky">
                       <div class="d-flex align-items-center justify-content-between">
                         <p class="mb-0 py-3 text-muted d-md-none">نحوه کار:</p>
                         <p class="mb-0 py-3">ماهانه</p>
-                       </div>
-                     </div>
-                     <div class="col-md-2 d-flex align-items-center justify-content-md-center justify-content-between border-b-md-sky"> 
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-2 d-flex align-items-center justify-content-md-center justify-content-between border-b-md-sky">
                       <div class="d-flex align-items-center justify-content-between w-100">
                         <p class="mb-0 py-3 text-muted d-md-none">وضعیت:</p>
                         <div class="mb-0 py-3">
-                          <div class="mb-0 rounded-10 text-green font-bold w-md-33 h-md-33 w-90 h-31 bg-green border-green d-flex align-items-center justify-content-center">
-                            <svg class="d-md-none" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M8.5 13.8008L12.7277 17.1829C13.1556 17.5252 13.7793 17.4594 14.1263 17.0353L22.5 6.80078" stroke="#4EC34B" stroke-width="2" stroke-linecap="round"></path>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6893 13.0376L16.274 7.43405C16.6237 7.0066 16.5607 6.37658 16.1333 6.02685C15.7059 5.67713 15.0758 5.74013 14.7261 6.16757L10.1528 11.7572L11.6893 13.0376ZM8.52298 16.9075L6.98647 15.6271L6.33315 16.4256L3.10006 14.0008C2.65823 13.6694 2.03143 13.759 1.70006 14.2008C1.36869 14.6426 1.45823 15.2694 1.90006 15.6008L5.13315 18.0256C5.99053 18.6687 7.2024 18.5216 7.88106 17.6921L8.52298 16.9075Z" fill="#4EC34B"></path>
+                          <div
+                            class="mb-0 rounded-10 text-green font-bold w-md-33 h-md-33 w-90 h-31 bg-green border-green d-flex align-items-center justify-content-center">
+                            <svg class="d-md-none" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8.5 13.8008L12.7277 17.1829C13.1556 17.5252 13.7793 17.4594 14.1263 17.0353L22.5 6.80078"
+                                stroke="#4EC34B" stroke-width="2" stroke-linecap="round"></path>
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.6893 13.0376L16.274 7.43405C16.6237 7.0066 16.5607 6.37658 16.1333 6.02685C15.7059 5.67713 15.0758 5.74013 14.7261 6.16757L10.1528 11.7572L11.6893 13.0376ZM8.52298 16.9075L6.98647 15.6271L6.33315 16.4256L3.10006 14.0008C2.65823 13.6694 2.03143 13.759 1.70006 14.2008C1.36869 14.6426 1.45823 15.2694 1.90006 15.6008L5.13315 18.0256C5.99053 18.6687 7.2024 18.5216 7.88106 17.6921L8.52298 16.9075Z"
+                                fill="#4EC34B"></path>
                             </svg>
                             <span class="d-md-block d-none">پرداخت شده</span>
                           </div>
                         </div>
-                       </div>
-                     </div>
-                  </div>
-                  <div class="row mx-3 overflow-hidden mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0"> 
-                    <div class="col-md-2 border-b-md-sky"> 
-                     <div class="d-flex align-items-center justify-content-between">
-                      <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه:</p>
-                      <p class="mb-0 py-3">3568534</p>
-                     </div>
+                      </div>
                     </div>
-                    <div class="col-md-2 border-b-md-sky"> 
+                  </div>
+                  <div
+                    class="row mx-3 overflow-hidden mb-4 mb-md-0 font-bold border-bottom rounded-md-15 shadow-md-4 border-b-md-0">
+                    <div class="col-md-2 border-b-md-sky">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 py-3 text-muted d-md-none">شماره بیمه نامه:</p>
+                        <p class="mb-0 py-3">3568534</p>
+                      </div>
+                    </div>
+                    <div class="col-md-2 border-b-md-sky">
                       <div class="d-flex align-items-center justify-content-between">
                         <p class="mb-0 py-3 text-muted d-md-none">نوع بیمه نامه:</p>
                         <p class="mb-0 py-3">بیمه بدنه</p>
-                       </div>
-                     </div>
-                     <div class="col-md-2 border-b-md-sky"> 
+                      </div>
+                    </div>
+                    <div class="col-md-2 border-b-md-sky">
                       <div class="d-flex align-items-center justify-content-between">
                         <p class="mb-0 py-3 text-muted d-md-none">تاریخ ثبت:</p>
                         <p class="mb-0 py-3">1403/03/22</p>
-                       </div>
-                     </div>
-                     <div class="col-md-2 border-b-md-sky"> 
-                       <div class="d-flex align-items-center justify-content-between">
-                         <p class="mb-0 py-3 text-muted d-md-none">تاریخ پایان:</p>
-                         <p class="mb-0 py-3">1403/03/22</p>
-                        </div>
                       </div>
-                      <div class="col-md-1 border-b-md-sky"> 
-                       <div class="d-flex align-items-center justify-content-between">
-                         <p class="mb-0 py-3 text-muted d-md-none">تعداد اقساط:</p>
-                         <p class="mb-0 py-3">36</p>
-                        </div>
+                    </div>
+                    <div class="col-md-2 border-b-md-sky">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 py-3 text-muted d-md-none">تاریخ پایان:</p>
+                        <p class="mb-0 py-3">1403/03/22</p>
                       </div>
-                      <div class="col-md-1 border-b-md-sky"> 
-                       <div class="d-flex align-items-center justify-content-between">
-                         <p class="mb-0 py-3 text-muted d-md-none">نحوه کار:</p>
-                         <p class="mb-0 py-3">ماهانه</p>
-                        </div>
+                    </div>
+                    <div class="col-md-1 border-b-md-sky">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 py-3 text-muted d-md-none">تعداد اقساط:</p>
+                        <p class="mb-0 py-3">36</p>
                       </div>
-                      <div class="col-md-2 d-flex align-items-center justify-content-md-center justify-content-between border-b-md-sky"> 
-                       <div class="d-flex align-items-center justify-content-between w-100">
-                         <p class="mb-0 py-3 text-muted d-md-none">وضعیت:</p>
-                         <div class="mb-0 py-3">
-                           <div class="mb-0 rounded-10 text-danger font-bold w-md-33 h-md-33 w-90 h-31 bg-pink border border-danger d-flex align-items-center justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-slash-circle-fill d-md-none text-danger" viewBox="0 0 16 16">
-                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.646-2.646a.5.5 0 0 0-.708-.708l-6 6a.5.5 0 0 0 .708.708z"/>
+                    </div>
+                    <div class="col-md-1 border-b-md-sky">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 py-3 text-muted d-md-none">نحوه کار:</p>
+                        <p class="mb-0 py-3">ماهانه</p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-2 d-flex align-items-center justify-content-md-center justify-content-between border-b-md-sky">
+                      <div class="d-flex align-items-center justify-content-between w-100">
+                        <p class="mb-0 py-3 text-muted d-md-none">وضعیت:</p>
+                        <div class="mb-0 py-3">
+                          <div
+                            class="mb-0 rounded-10 text-danger font-bold w-md-33 h-md-33 w-90 h-31 bg-pink border border-danger d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              class="bi bi-slash-circle-fill d-md-none text-danger" viewBox="0 0 16 16">
+                              <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.646-2.646a.5.5 0 0 0-.708-.708l-6 6a.5.5 0 0 0 .708.708z" />
                             </svg>
-                             <span class="d-md-block d-none">پرداخت نشده</span>
-                           </div>
+                            <span class="d-md-block d-none">پرداخت نشده</span>
                           </div>
                         </div>
                       </div>
-                   </div>
+                    </div>
+                  </div>
                 </div>
                 <a class="mb-1 d-block d-md-none">
-                  <svg class="d-block me-auto" width="49" height="35" viewBox="0 0 49 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="d-block me-auto" width="49" height="35" viewBox="0 0 49 35" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <rect width="49" height="35" rx="10" fill="#008BF9"></rect>
-                    <path d="M19.85 16.4583H20.3861C20.7451 16.4583 20.9246 16.4583 21.083 16.5129C21.2232 16.5612 21.3508 16.6401 21.4567 16.7438C21.5764 16.8611 21.6567 17.0216 21.8172 17.3427L21.9744 17.6571C22.135 17.9782 22.2152 18.1387 22.335 18.256C22.4409 18.3597 22.5685 18.4386 22.7086 18.4869C22.8671 18.5416 23.0466 18.5416 23.4055 18.5416H25.5945C25.9534 18.5416 26.1329 18.5416 26.2914 18.4869C26.4315 18.4386 26.5591 18.3597 26.665 18.256C26.7848 18.1387 26.865 17.9782 27.0256 17.6571L27.0256 17.6571L27.1828 17.3427C27.3433 17.0216 27.4236 16.8611 27.5433 16.7438C27.6492 16.6401 27.7768 16.5612 27.917 16.5129C28.0754 16.4583 28.2549 16.4583 28.6139 16.4583H29.15C29.7101 16.4583 29.9901 16.4583 30.204 16.5672C30.3922 16.6631 30.5451 16.8161 30.641 17.0043C30.75 17.2182 30.75 17.4982 30.75 18.0583V25.2749C30.75 25.835 30.75 26.115 30.641 26.3289C30.5451 26.5171 30.3922 26.6701 30.204 26.7659C29.9901 26.8749 29.7101 26.8749 29.15 26.8749H19.85C19.2899 26.8749 19.0099 26.8749 18.796 26.7659C18.6078 26.6701 18.4549 26.5171 18.359 26.3289C18.25 26.115 18.25 25.835 18.25 25.2749V18.0583C18.25 17.4982 18.25 17.2182 18.359 17.0043C18.4549 16.8161 18.6078 16.6631 18.796 16.5672C19.0099 16.4583 19.2899 16.4583 19.85 16.4583Z" stroke="white" stroke-width="2"></path>
-                    <path d="M25.5417 21.6665H23.4584C23.4197 21.6665 23.4004 21.6665 23.384 21.667C22.8574 21.6843 22.4345 22.1072 22.4173 22.6338C22.4167 22.6501 22.4167 22.6695 22.4167 22.7082C22.4167 22.7469 22.4167 22.7662 22.4173 22.7826C22.4345 23.3092 22.8574 23.7321 23.384 23.7493C23.4004 23.7498 23.4197 23.7498 23.4584 23.7498H25.5417C25.5804 23.7498 25.5998 23.7498 25.6161 23.7493C26.1427 23.7321 26.5656 23.3092 26.5829 22.7826C26.5834 22.7662 26.5834 22.7469 26.5834 22.7082C26.5834 22.6695 26.5834 22.6501 26.5829 22.6338C26.5656 22.1072 26.1427 21.6843 25.6161 21.667C25.5998 21.6665 25.5804 21.6665 25.5417 21.6665Z" fill="white"></path>
-                    <path d="M19.2917 16.4583H16.725C16.1649 16.4583 15.8849 16.4583 15.671 16.5672C15.4828 16.6631 15.3299 16.8161 15.234 17.0043C15.125 17.2182 15.125 17.4982 15.125 18.0583V25.2749C15.125 25.835 15.125 26.115 15.234 26.3289C15.3299 26.5171 15.4828 26.6701 15.671 26.7659C15.8849 26.8749 16.1649 26.8749 16.725 26.8749H32.275C32.8351 26.8749 33.1151 26.8749 33.329 26.7659C33.5172 26.6701 33.6701 26.5171 33.766 26.3289C33.875 26.115 33.875 25.835 33.875 25.2749V18.0583C33.875 17.4982 33.875 17.2182 33.766 17.0043C33.6701 16.8161 33.5172 16.6631 33.329 16.5672C33.1151 16.4583 32.8351 16.4583 32.275 16.4583H29.7083" stroke="white" stroke-width="2"></path>
-                    <path d="M29.7084 16.4583V11.3919C29.7084 11.1473 29.7084 11.025 29.6808 10.9099C29.6563 10.8079 29.6159 10.7104 29.5611 10.6209C29.4992 10.52 29.4127 10.4335 29.2398 10.2605L27.5729 8.59363C27.3999 8.42068 27.3135 8.3342 27.2125 8.27236C27.1231 8.21753 27.0255 8.17713 26.9235 8.15263C26.8084 8.125 26.6861 8.125 26.4415 8.125H21.6917C20.8517 8.125 20.4316 8.125 20.1108 8.28849C19.8285 8.4323 19.599 8.66177 19.4552 8.94401C19.2917 9.26488 19.2917 9.68492 19.2917 10.525V16.4583" stroke="white" stroke-width="2"></path>
-                    <path d="M25.5417 8.12508L25.5417 10.6917C25.5417 11.2518 25.5417 11.5318 25.6507 11.7457C25.7466 11.9339 25.8996 12.0869 26.0878 12.1828C26.3017 12.2917 26.5817 12.2917 27.1417 12.2917L29.7084 12.2917" stroke="white" stroke-width="2"></path>
+                    <path
+                      d="M19.85 16.4583H20.3861C20.7451 16.4583 20.9246 16.4583 21.083 16.5129C21.2232 16.5612 21.3508 16.6401 21.4567 16.7438C21.5764 16.8611 21.6567 17.0216 21.8172 17.3427L21.9744 17.6571C22.135 17.9782 22.2152 18.1387 22.335 18.256C22.4409 18.3597 22.5685 18.4386 22.7086 18.4869C22.8671 18.5416 23.0466 18.5416 23.4055 18.5416H25.5945C25.9534 18.5416 26.1329 18.5416 26.2914 18.4869C26.4315 18.4386 26.5591 18.3597 26.665 18.256C26.7848 18.1387 26.865 17.9782 27.0256 17.6571L27.0256 17.6571L27.1828 17.3427C27.3433 17.0216 27.4236 16.8611 27.5433 16.7438C27.6492 16.6401 27.7768 16.5612 27.917 16.5129C28.0754 16.4583 28.2549 16.4583 28.6139 16.4583H29.15C29.7101 16.4583 29.9901 16.4583 30.204 16.5672C30.3922 16.6631 30.5451 16.8161 30.641 17.0043C30.75 17.2182 30.75 17.4982 30.75 18.0583V25.2749C30.75 25.835 30.75 26.115 30.641 26.3289C30.5451 26.5171 30.3922 26.6701 30.204 26.7659C29.9901 26.8749 29.7101 26.8749 29.15 26.8749H19.85C19.2899 26.8749 19.0099 26.8749 18.796 26.7659C18.6078 26.6701 18.4549 26.5171 18.359 26.3289C18.25 26.115 18.25 25.835 18.25 25.2749V18.0583C18.25 17.4982 18.25 17.2182 18.359 17.0043C18.4549 16.8161 18.6078 16.6631 18.796 16.5672C19.0099 16.4583 19.2899 16.4583 19.85 16.4583Z"
+                      stroke="white" stroke-width="2"></path>
+                    <path
+                      d="M25.5417 21.6665H23.4584C23.4197 21.6665 23.4004 21.6665 23.384 21.667C22.8574 21.6843 22.4345 22.1072 22.4173 22.6338C22.4167 22.6501 22.4167 22.6695 22.4167 22.7082C22.4167 22.7469 22.4167 22.7662 22.4173 22.7826C22.4345 23.3092 22.8574 23.7321 23.384 23.7493C23.4004 23.7498 23.4197 23.7498 23.4584 23.7498H25.5417C25.5804 23.7498 25.5998 23.7498 25.6161 23.7493C26.1427 23.7321 26.5656 23.3092 26.5829 22.7826C26.5834 22.7662 26.5834 22.7469 26.5834 22.7082C26.5834 22.6695 26.5834 22.6501 26.5829 22.6338C26.5656 22.1072 26.1427 21.6843 25.6161 21.667C25.5998 21.6665 25.5804 21.6665 25.5417 21.6665Z"
+                      fill="white"></path>
+                    <path
+                      d="M19.2917 16.4583H16.725C16.1649 16.4583 15.8849 16.4583 15.671 16.5672C15.4828 16.6631 15.3299 16.8161 15.234 17.0043C15.125 17.2182 15.125 17.4982 15.125 18.0583V25.2749C15.125 25.835 15.125 26.115 15.234 26.3289C15.3299 26.5171 15.4828 26.6701 15.671 26.7659C15.8849 26.8749 16.1649 26.8749 16.725 26.8749H32.275C32.8351 26.8749 33.1151 26.8749 33.329 26.7659C33.5172 26.6701 33.6701 26.5171 33.766 26.3289C33.875 26.115 33.875 25.835 33.875 25.2749V18.0583C33.875 17.4982 33.875 17.2182 33.766 17.0043C33.6701 16.8161 33.5172 16.6631 33.329 16.5672C33.1151 16.4583 32.8351 16.4583 32.275 16.4583H29.7083"
+                      stroke="white" stroke-width="2"></path>
+                    <path
+                      d="M29.7084 16.4583V11.3919C29.7084 11.1473 29.7084 11.025 29.6808 10.9099C29.6563 10.8079 29.6159 10.7104 29.5611 10.6209C29.4992 10.52 29.4127 10.4335 29.2398 10.2605L27.5729 8.59363C27.3999 8.42068 27.3135 8.3342 27.2125 8.27236C27.1231 8.21753 27.0255 8.17713 26.9235 8.15263C26.8084 8.125 26.6861 8.125 26.4415 8.125H21.6917C20.8517 8.125 20.4316 8.125 20.1108 8.28849C19.8285 8.4323 19.599 8.66177 19.4552 8.94401C19.2917 9.26488 19.2917 9.68492 19.2917 10.525V16.4583"
+                      stroke="white" stroke-width="2"></path>
+                    <path
+                      d="M25.5417 8.12508L25.5417 10.6917C25.5417 11.2518 25.5417 11.5318 25.6507 11.7457C25.7466 11.9339 25.8996 12.0869 26.0878 12.1828C26.3017 12.2917 26.5817 12.2917 27.1417 12.2917L29.7084 12.2917"
+                      stroke="white" stroke-width="2"></path>
                   </svg>
                 </a>
               </div>
@@ -719,9 +807,54 @@
       </div>
     </section>
 
+    <!-- navigation -->
+    <div class="navigation w-95 mx-auto mb-4 d-sm-none m-4">
+      <ul>
+        <li class="list active">
+          <a>
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="text">خانه</span>
+            <span class="circle"></span>
+          </a>
+        </li>
+        <li class="list">
+          <a>
+            <span class="icon">
+              <ion-icon name="headset-outline"></ion-icon>
+            </span>
+            <span class="text">ارتباط با ما</span>
+            <span class="circle"></span>
+          </a>
+        </li>
+        <li class="list">
+          <a>
+            <span class="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span class="text">ورود|ثبت نام</span>
+            <span class="circle"></span>
+          </a>
+        </li>
+        <li class="list">
+          <a>
+            <span class="icon">
+              <ion-icon name="search-outline"></ion-icon>
+            </span>
+            <span class="text">جستجو</span>
+            <span class="circle"></span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+
   </main>
 
-  <!-- Swiper JS -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/jalalidatepicker.min.js"></script>
   <script src="assets/js/scripts.js"></script>

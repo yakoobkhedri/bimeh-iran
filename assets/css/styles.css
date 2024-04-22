@@ -15,12 +15,13 @@
     position: sticky;
     bottom: 13px;
     width: 400px;
-    height: 70px;
+    height: 82px;
     background: #008BF9;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
+    z-index: 999;
 }
 
 .navigation ul {
@@ -59,7 +60,7 @@
 }
 
 .navigation ul li.active a .icon {
-    transform: translateY(-36px);
+    transform: translateY(-42px);
 }
 
 .navigation ul li a .text {
@@ -86,7 +87,7 @@
 
 .indicator {
     position: absolute;
-    top: -50%;
+    top: -43%;
     width: 70px;
     height: 70px;
     background: #008BF9;
