@@ -834,6 +834,9 @@ header .showHover:hover .dropdown{
     .shadow-md-4 {
         box-shadow: 0px 0px 8px 0px #008BF912;
     }
+    .border-md-0{
+        border: none!important;
+    }
     .border-b-md-0{
         border-bottom: none!important;
     }
