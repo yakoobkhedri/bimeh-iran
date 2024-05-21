@@ -946,6 +946,9 @@ header .showHover:hover .dropdown{
       .-left-sm-16{
         left: -16px;
       }
+      .bg-main-gradient-after::after {
+        height: 144px;
+      }
 }
 
 @media only screen and (max-width:400px) {
